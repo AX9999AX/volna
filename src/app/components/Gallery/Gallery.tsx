@@ -11,7 +11,7 @@ const Gallery = (props: GalleryProps) => {
 
     return (
         <div className='relative w-full'>
-            <div className='relative w-full h-[500px] rounded-[33px] overflow-hidden'>
+            <div className='relative w-full h-[250px] md:h-[500px] rounded-[33px] overflow-hidden'>
                 <AnimatePresence mode='wait'>
                     <motion.div
                         key={images[selectedImage]}

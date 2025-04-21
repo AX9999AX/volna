@@ -7,24 +7,26 @@ const About = () => {
         <section
             id='about'
             className='container mx-auto px-8'>
-            <div className='flex justify-between items-center mt-20 mb-10'>
-                <h2 className='font-primary font-medium text-[64px] leading-[128%]'>Про Житловий Комплекс</h2>
-                <p className='font-secondary font-normal text-[18px] leading-[150%] text-[#4E4E4E]'>
+            <div className='flex justify-between items-center flex-wrap mt-8 md:mt-20 mb-10'>
+                <h2 className='font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
+                    Про Житловий Комплекс
+                </h2>
+                <p className='font-secondary font-normal text-[12px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Продуманий простір для щоденного комфорту
                 </p>
             </div>
             <div className='grid grid-cols-2 gap-6'>
-                <div className='col-span-2 lg:col-span-1'>
+                <div className='col-span-2 xl:col-span-1'>
                     <Gallery images={['/gallery-1.jpg', '/gallery-2.jpg', '/gallery-3.jpg']} />
                 </div>
-                <div className='grid grid-cols-1 gap-6'>
+                <div className='col-span-2 xl:col-span-1 grid grid-cols-1 gap-6'>
                     <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
                         Житловий комплекс «VOLNA»,
                         <strong>створений з думкою про комфорт та безпеку мешканців</strong>, розташований у тихому
                         затишному районі Києва, на Осокорках.
                     </p>
                     <div className='grid grid-cols-2 gap-6'>
-                        <div className='h-[410px] bg-[#F8F8F8] rounded-[29px]'>
+                        <div className='col-span-2 md:col-span-1 h-[410px] bg-[#F8F8F8] rounded-[29px]'>
                             <h3 className='text-center my-4 font-primary font-medium text-[26px] leading-[128%] text-[#1D1D1F]'>
                                 Комфорт та безпека мешканців
                             </h3>
@@ -42,8 +44,8 @@ const About = () => {
                                 />
                             </div>
                         </div>
-                        <div className='h-[410px] bg-[#F8F8F8] rounded-[29px]'>
-                            <div className='relative h-[240px]'>
+                        <div className='col-span-2 md:col-span-1 h-[410px] bg-[#F8F8F8] rounded-[29px]'>
+                            <div className='relative h-[240px] m-2'>
                                 <Image
                                     fill
                                     src={'/gallery-1.jpg'}
@@ -68,12 +70,12 @@ const About = () => {
             </div>
             <Stats />
             <div className='grid grid-cols-2 gap-6 mt-12'>
-                <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <p className='col-span-2 md:col-span-1 font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Тут <strong>кожна деталь продумана до дрібниць</strong> - від облаштування апартаментів та кімнат до
                     озеленення і ландшафтного дизайну території, що створює <strong>приємне середовище</strong>, де
                     хочеться жити, працювати і відпочивати.
                 </p>
-                <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <p className='col-span-2 md:col-span-1 font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Комплекс має закриту територію з охороною 24/7 , власну автостоянку, автономну інженерну
                     інфраструктуру, включно з власною артезіанською свердловиною для водопостачання
                 </p>

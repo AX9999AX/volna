@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-primary: var(--font-montserrat);
+  --font-secondary: var(--font-inter);
+  --color-btn-default: #f2f2f2;
+  --color-btn-active: #b4ef7b;
+}

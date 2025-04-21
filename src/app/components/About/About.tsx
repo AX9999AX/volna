@@ -51,8 +51,17 @@ const About = () => {
                                     className='rounded-[25px]'
                                 />
                             </div>
-                            <h3>Ціна оренди від </h3>
-                            <button>Переваги Проживання</button>
+                            <h3 className='text-center mt-3 font-secondary text-[24px] leading-[150%] text-[#4E4E4E]'>
+                                Ціна оренди від
+                            </h3>
+                            <div className='text-center font-secondary text-[24px] leading-[150%] text-[#4E4E4E]'>
+                                ₴4.000
+                            </div>
+                            <div className='flex justify-center mt-5'>
+                                <button className='font-secondary text-[15px] cursor-pointer bg-[#B4EF7B] rounded-[24px] w-[200px] h-[48px]'>
+                                    Варіанти Проживання
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

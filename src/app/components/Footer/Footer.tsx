@@ -2,9 +2,8 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import MobileNav from './MobileNav'
 
-const Header = () => {
+const Footer = () => {
     const scrollToSection = (id: string) => {
         const section = document.getElementById(id)
         if (section) {
@@ -16,14 +15,14 @@ const Header = () => {
     }
 
     return (
-        <header className='container mx-auto'>
-            <div className='flex justify-between items-center h-[63px] mx-0 md:mx-8 px-8 rounded-b-[29px] bg-[#F8F8F8]'>
+        <footer className='container mt-20 mx-auto'>
+            <div className='flex justify-between items-center h-[120px] mx-0 md:mx-8 px-8 rounded-t-[29px] bg-[#F8F8F8]'>
                 <div>
                     <Image
                         src='/logo.svg'
                         alt='Лого'
-                        width={121}
-                        height={33}
+                        width={288}
+                        height={78}
                     />
                 </div>
                 <nav className='hidden xl:block'>
@@ -58,10 +57,9 @@ const Header = () => {
                         </motion.li>
                     </ul>
                 </nav>
-                <MobileNav />
             </div>
-        </header>
+        </footer>
     )
 }
 
-export default Header
+export default Footer

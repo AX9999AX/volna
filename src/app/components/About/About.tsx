@@ -8,10 +8,10 @@ const About = () => {
             id='about'
             className='container mx-auto px-8'>
             <div className='flex justify-between items-center flex-wrap mt-8 md:mt-20 mb-10'>
-                <h2 className='font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
+                <h2 className='w-full md:w-auto text-center md:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
                     Про Житловий Комплекс
                 </h2>
-                <p className='font-secondary font-normal text-[12px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <p className='w-full md:w-auto text-center md:text-left font-secondary font-normal text-[12px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Продуманий простір для щоденного комфорту
                 </p>
             </div>

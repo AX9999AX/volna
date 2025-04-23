@@ -2,25 +2,41 @@
 
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useState } from 'react'
-import { GalleryType } from './GallerySectionType'
+import { useEffect, useRef, useState } from 'react'
+import { MegaGalleryType } from './MegaGallery.type'
+import Player from '@vimeo/player'
 
-const GallerySection = () => {
-    const [galleryType, setGallaryType] = useState<GalleryType>(GalleryType.Territory)
+const MegaGallery = () => {
+    const iframeRef = useRef(null)
+    const [showControls, setShowControls] = useState(false)
+    const [galleryType, setGallaryType] = useState<MegaGalleryType>(MegaGalleryType.Territory)
+
+    useEffect(() => {
+        if (iframeRef.current) {
+            const player = new Player(iframeRef.current)
+
+            player.on('play', () => {
+                setShowControls(true)
+            })
+        }
+    }, [])
+
+    const videoSrc = showControls
+        ? 'https://player.vimeo.com/video/115783408?controls=0'
+        : 'https://player.vimeo.com/video/115783408?controls=0'
 
     return (
         <section
             id='gallery'
             className='container mx-auto px-8 mt-20 mb-20'>
             <div className='flex justify-between items-center flex-wrap mt-8 md:mt-20 mb-10'>
-                <h2 className='font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
-                    Про Житловий Комплекс
+                <h2 className='w-full md:w-auto text-center md:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
+                    Галерея
                 </h2>
-                <p className='font-secondary font-normal text-[12px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
-                    Продуманий простір для щоденного комфорту
+                <p className='w-full md:w-auto text-center md:text-left font-secondary font-normal text-[12px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                    Побачити — щоб відчути
                 </p>
             </div>
-
             <div className='flex justify-between items-center flex-wrap'>
                 <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E] w-[50%]'>
                     Ознайомтесь з атмосферою ЖК VOLNA через фото та відео. Побачте комплекс з висоти, інтер’єри
@@ -29,16 +45,16 @@ const GallerySection = () => {
                 <div className='flex gap-4'>
                     <button
                         className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] ${
-                            galleryType === GalleryType.Territory ? 'bg-btn-active' : 'bg-btn-default'
+                            galleryType === MegaGalleryType.Territory ? 'bg-btn-active' : 'bg-btn-default'
                         }  rounded-2xl`}
-                        onClick={() => setGallaryType(GalleryType.Territory)}>
+                        onClick={() => setGallaryType(MegaGalleryType.Territory)}>
                         Фотографії території
                     </button>
                     <button
                         className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] ${
-                            galleryType === GalleryType.Interior ? 'bg-btn-active' : 'bg-btn-default'
+                            galleryType === MegaGalleryType.Interior ? 'bg-btn-active' : 'bg-btn-default'
                         }  rounded-2xl`}
-                        onClick={() => setGallaryType(GalleryType.Interior)}>
+                        onClick={() => setGallaryType(MegaGalleryType.Interior)}>
                         Фотографії інтер’єру
                     </button>
                 </div>
@@ -57,7 +73,7 @@ const GallerySection = () => {
                                 <Image
                                     fill
                                     src={
-                                        galleryType === GalleryType.Interior
+                                        galleryType === MegaGalleryType.Interior
                                             ? '/gallery-section-2.jpg'
                                             : '/gallery-section-1.jpg'
                                     }
@@ -78,7 +94,7 @@ const GallerySection = () => {
                                 <Image
                                     fill
                                     src={
-                                        galleryType === GalleryType.Interior
+                                        galleryType === MegaGalleryType.Interior
                                             ? '/gallery-section-2.jpg'
                                             : '/gallery-section-1.jpg'
                                     }
@@ -93,7 +109,8 @@ const GallerySection = () => {
                     <div className='grid grid-cols-1 grid-rows-[auto_260px] gap-6'>
                         <div className='relative aspect-video overflow-hidden rounded-[20px]'>
                             <iframe
-                                src='https://player.vimeo.com/video/115783408?muted=0'
+                                ref={iframeRef}
+                                src={videoSrc}
                                 className='absolute top-0 left-0 w-full h-full'
                                 allow='autoplay; fullscreen; picture-in-picture'
                                 allowFullScreen
@@ -124,4 +141,4 @@ const GallerySection = () => {
     )
 }
 
-export default GallerySection
+export default MegaGallery

@@ -1,32 +1,35 @@
 'use client'
 
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import dynamic from 'next/dynamic'
+
+const DynamicMap = dynamic(() => import('./LocationMap'), {
+    ssr: false,
+})
 
 const Location = () => {
-    const position: [number, number] = [50.4501, 30.5234]
-
     return (
         <section className='container mx-auto px-8 bg-[#F8F8F8]'>
+            <div className='flex xl:hidden justify-between items-center flex-wrap pt-12'>
+                <h2 className='w-full md:w-auto text-center md:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
+                    Локація та інфраструктура
+                </h2>
+                <p className='w-full md:w-auto text-center md:text-left font-secondary font-normal text-[12px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                    Усе, що потрібно для сучасного життя
+                </p>
+            </div>
             <div className='grid grid-cols-2 gap-6 py-12'>
-                <div className='w-full h-full rounded-2xl overflow-hidden'>
-                    <MapContainer
-                        center={position}
-                        zoom={16}
-                        scrollWheelZoom={true}
-                        style={{ width: '100%', height: '100%' }}>
-                        <TileLayer url='https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png' />
-                        <Marker position={position}>
-                            <Popup>вул. Квіткова, 21-А</Popup>
-                        </Marker>
-                    </MapContainer>
+                <div className='col-span-2 xl:col-span-1 w-full min-h-[350px] xl:min-h-[0px] h-full rounded-2xl overflow-hidden'>
+                    <DynamicMap />
                 </div>
-                <div>
-                    <h2 className='font-primary font-medium text-[48px] my-6'>Локація та інфраструктура</h2>
-                    <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <div className='col-span-2 xl:col-span-1'>
+                    <h2 className='hidden xl:block text-center xl:text-left font-primary font-medium text-[24px] md:text-[40px] xl:text-[42px] my-6'>
+                        Локація та інфраструктура
+                    </h2>
+                    <p className='text-center md:text-left font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
                         ЖК VOLNA розташований у зручному та спокійному районі, де все необхідне — поруч. У безпосередній
                         близькості знаходяться магазини, школи, дитячі садки, аптеки та сервіси.
                     </p>
-                    <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E] mt-4'>
+                    <p className='text-center md:text-left font-secondary text-[18px] leading-[150%] text-[#4E4E4E] mt-4'>
                         <strong>Зручна транспортна розв’язка</strong> дозволяє швидко дістатися в будь-яку частину
                         міста, як на авто, так і громадським транспортом.
                     </p>

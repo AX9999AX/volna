@@ -1,3 +1,7 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 const Contacts = () => {
     return (
         <section
@@ -28,18 +32,22 @@ const Contacts = () => {
                             Месенджери
                         </div>
                         <div className='w-full md:w-auto flex justify-center md:justify-baseline'>
-                            <a
-                                href='https://www.instagram.com/'
+                            <motion.a
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ type: 'spring', stiffness: 300 }}
+                                href='https://vb.me/+380674271737'
                                 target='_blank'
                                 className='flex justify-center items-center cursor-pointer border-2 text-[12px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4'>
                                 Viber
-                            </a>
-                            <a
-                                href='https://www.instagram.com/'
+                            </motion.a>
+                            <motion.a
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ type: 'spring', stiffness: 300 }}
+                                href='http://t.me/Volna_Kyiv_Residence'
                                 target='_blank'
                                 className='flex justify-center items-center cursor-pointer border-2 text-[12px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2'>
                                 Telegram
-                            </a>
+                            </motion.a>
                         </div>
                     </div>
                     <div className='flex items-center mt-3 md:mt-8 flex-wrap'>
@@ -47,24 +55,30 @@ const Contacts = () => {
                             Соціальні Мережі
                         </div>
                         <div className='w-full md:w-auto flex justify-center md:justify-baseline'>
-                            <a
-                                href='https://www.instagram.com/'
+                            <motion.a
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ type: 'spring', stiffness: 300 }}
+                                href='https://www.tiktok.com/@gk_volna'
                                 target='_blank'
                                 className='flex justify-center items-center cursor-pointer border-2 text-[12px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4'>
                                 TikTok
-                            </a>
-                            <a
-                                href='https://www.instagram.com/'
+                            </motion.a>
+                            <motion.a
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ type: 'spring', stiffness: 300 }}
+                                href='https://www.instagram.com/volna_kyiv'
                                 target='_blank'
                                 className='flex justify-center items-center cursor-pointer border-2 text-[12px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4'>
                                 Instagram
-                            </a>
-                            <a
-                                href='https://www.instagram.com/'
+                            </motion.a>
+                            <motion.a
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ type: 'spring', stiffness: 300 }}
+                                href='https://www.facebook.com/volna.kyiv/'
                                 target='_blank'
                                 className='flex justify-center items-center cursor-pointer border-2 text-[12px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2'>
                                 Facebook
-                            </a>
+                            </motion.a>
                         </div>
                     </div>
                 </div>
@@ -73,33 +87,39 @@ const Contacts = () => {
                         <div className='font-primary font-medium text-xl sm:text-2xl leading-[128%] text-gray-900 mb-2 sm:mb-0'>
                             Адреса
                         </div>
-                        <a
-                            href='https://www.google.com/maps?q=Київська обл., Золочівська ТГ, вул. Квіткова, 21-А'
+                        <motion.a
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
+                            href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6А'
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='bg-white text-gray-800 rounded-2xl px-4 py-2 font-secondary text-[12px] sm:text-base hover:bg-gray-100 transition-colors duration-200'>
+                            className='bg-white text-gray-800 rounded-2xl px-4 py-2 font-secondary text-[12px] sm:text-base'>
                             Київська обл., Золочівська ТГ, вул. Квіткова, 21-А
-                        </a>
+                        </motion.a>
                     </div>
                     <div className='flex flex-col sm:flex-row sm:items-center justify-between mb-4'>
                         <div className='font-primary font-medium text-xl sm:text-2xl leading-[128%] text-gray-900 mb-2 sm:mb-0'>
                             Телефон
                         </div>
-                        <a
+                        <motion.a
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
                             href='tel:+380674271737'
-                            className='bg-white text-gray-800 rounded-2xl px-4 py-2 font-secondary text-[12px] sm:text-base hover:bg-gray-100 transition-colors duration-200'>
+                            className='bg-white text-gray-800 rounded-2xl px-4 py-2 font-secondary text-[12px] sm:text-base'>
                             +380 (67) 427-17-37
-                        </a>
+                        </motion.a>
                     </div>
                     <div className='flex flex-col sm:flex-row sm:items-center justify-between'>
                         <div className='font-primary font-medium text-xl sm:text-2xl leading-[128%] text-gray-900 mb-2 sm:mb-0'>
                             Email
                         </div>
-                        <a
-                            href='mailto:bvvolna@gmail.com'
-                            className='bg-white text-gray-800 rounded-2xl px-4 py-2 font-secondary text-[12px] sm:text-base hover:bg-gray-100 transition-colors duration-200'>
-                            bvvolna@gmail.com
-                        </a>
+                        <motion.a
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
+                            href='mailto:volna.residence@gmail.com'
+                            className='bg-white text-gray-800 rounded-2xl px-4 py-2 font-secondary text-[12px] sm:text-base'>
+                            volna.residence@gmail.com
+                        </motion.a>
                     </div>
                 </div>
             </div>

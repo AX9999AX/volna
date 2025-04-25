@@ -20,7 +20,7 @@ const About = () => {
                     <Gallery images={['/gallery-1.jpg', '/gallery-2.jpg', '/gallery-3.jpg']} />
                 </div>
                 <div className='col-span-2 xl:col-span-1 grid grid-cols-1 gap-6'>
-                    <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
+                    <p className='text-center md:text-left font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
                         Житловий комплекс «VOLNA»,
                         <strong>створений з думкою про комфорт та безпеку мешканців</strong>, розташований у тихому
                         затишному районі Києва, на Осокорках.
@@ -70,12 +70,12 @@ const About = () => {
             </div>
             <Stats />
             <div className='grid grid-cols-2 gap-6 mt-12'>
-                <p className='col-span-2 md:col-span-1 font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <p className='text-center md:text-left col-span-2 md:col-span-1 font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Тут <strong>кожна деталь продумана до дрібниць</strong> - від облаштування апартаментів та кімнат до
                     озеленення і ландшафтного дизайну території, що створює <strong>приємне середовище</strong>, де
                     хочеться жити, працювати і відпочивати.
                 </p>
-                <p className='col-span-2 md:col-span-1 font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <p className='text-center md:text-left col-span-2 md:col-span-1 font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Комплекс має закриту територію з охороною 24/7 , власну автостоянку, автономну інженерну
                     інфраструктуру, включно з власною артезіанською свердловиною для водопостачання
                 </p>

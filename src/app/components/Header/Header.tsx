@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import MobileNav from './MobileNav'
+import Link from 'next/link'
 
 const Header = () => {
     const scrollToSection = (id: string) => {
@@ -18,14 +19,14 @@ const Header = () => {
     return (
         <header className='container mx-auto'>
             <div className='flex justify-between items-center h-[63px] mx-0 md:mx-8 px-8 rounded-b-[29px] bg-[#F8F8F8]'>
-                <div>
+                <Link href={'/'}>
                     <Image
                         src='/logo.svg'
                         alt='Лого'
                         width={121}
                         height={33}
                     />
-                </div>
+                </Link>
                 <nav className='hidden xl:block'>
                     <ul className='flex'>
                         <motion.li

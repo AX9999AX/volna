@@ -35,7 +35,7 @@ const Advantages = () => {
                         <h3 className='font-primary font-medium text-[26px] leading-[128%] text-center my-3'>
                             Парковка на 40+ автомобілів
                         </h3>
-                        <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E] text-center mb-6 md:mb-0'>
+                        <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E] px-3 text-center mb-6 md:mb-0'>
                             Для зручності мешканців передбачено паркомісця на 40 автомобілів.
                         </p>
                     </div>

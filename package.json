@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.20.6",
     "@u-wave/react-vimeo": "^0.9.12",
     "framer-motion": "^12.7.4",
     "leaflet": "^1.9.4",

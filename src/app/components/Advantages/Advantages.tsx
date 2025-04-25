@@ -3,7 +3,9 @@ import AnimatedList from '../AnimatedList/AnimatedList'
 
 const Advantages = () => {
     return (
-        <section className='container mx-auto px-8 mt-20 mb-20'>
+        <section
+            id='advantages'
+            className='container mx-auto px-8 mt-20 mb-20'>
             <div className='flex justify-between items-center flex-wrap mt-8 md:mt-20 mb-10'>
                 <h2 className='w-full md:w-auto text-center md:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
                     Переваги проживання
@@ -30,6 +32,7 @@ const Advantages = () => {
                                 src={'/advantages/parking.avif'}
                                 alt='Parking'
                                 className='object-cover rounded-2xl'
+                                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                             />
                         </div>
                         <h3 className='font-primary font-medium text-[26px] leading-[128%] text-center my-3'>
@@ -45,6 +48,7 @@ const Advantages = () => {
                         src='/advantages/territory.jpg'
                         alt='Gallery 1'
                         className='hidden 2xl:block absolute -z-1 bottom-0 w-full xl:h-[340px] 2xl:h-[275px]'
+                        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                     />
                 </div>
                 <div className='col-span-2 md:col-span-1'>

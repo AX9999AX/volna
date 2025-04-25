@@ -25,6 +25,7 @@ const Gallery = (props: GalleryProps) => {
                             src={images[selectedImage]}
                             alt='Main Image'
                             className='object-cover rounded-[33px]'
+                            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 70vw'
                         />
                     </motion.div>
                 </AnimatePresence>

@@ -1,8 +1,20 @@
+'use client'
+
 import Gallery from '../Gallery/Gallery'
 import { Stats } from '../Stats/Stats'
 import Image from 'next/image'
 
 const About = () => {
+    const scrollToSection = (id: string) => {
+        const section = document.getElementById(id)
+        if (section) {
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth',
+            })
+        }
+    }
+
     return (
         <section
             id='about'
@@ -33,16 +45,19 @@ const About = () => {
                                 Комфорт та безпека мешканців
                             </h3>
                             <div className='flex justify-center mb-4'>
-                                <button className='font-secondary text-[15px] cursor-pointer border-2 border-[#E5E5E5] bg-white rounded-[24px] w-[200px] h-[48px]'>
+                                <button
+                                    onClick={() => scrollToSection('advantages')}
+                                    className='font-secondary text-[15px] cursor-pointer border-2 border-[#E5E5E5] bg-white rounded-[24px] w-[200px] h-[48px]'>
                                     Переваги Проживання
                                 </button>
                             </div>
-                            <div className='relative h-[240px] m-2'>
+                            <div className='relative min-h-[240px] m-2'>
                                 <Image
                                     fill
                                     src={'/about/security-house.avif'}
                                     alt={'Alt'}
                                     className='rounded-[25px]'
+                                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                                 />
                             </div>
                         </div>
@@ -53,6 +68,7 @@ const About = () => {
                                     src={'/about/appartment-lux.avif'}
                                     alt={'Alt'}
                                     className='rounded-[25px]'
+                                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                                 />
                             </div>
                             <h3 className='text-center mt-3 font-secondary text-[24px] leading-[150%] text-[#4E4E4E]'>

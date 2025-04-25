@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Appartment() {
+export default function AppartmentLux() {
     return (
         <section className='container mx-auto p-8'>
             <div className='p-4 border-2 border-[#B4EF7B] rounded-[33px]'>
@@ -8,7 +8,7 @@ export default function Appartment() {
                     <h3 className='font-secondary font-bold text-[32px] leading-[115%]'>
                         Апартаменти категорії «Люкс»
                     </h3>
-                    <div>₴11.000</div>
+                    <div className='bg'>₴11.000</div>
                 </div>
                 <div className='grid grid-cols-2 gap-6'>
                     <div className='grid grid-cols-1 gap-3'>

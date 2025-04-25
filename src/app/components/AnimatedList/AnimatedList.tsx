@@ -46,7 +46,7 @@ const AnimatedList: React.FC<IAnimatedList> = (props: IAnimatedList) => {
                     <div className='flex items-center'>
                         <div className='hidden md:block mr-4 min-w-[20px] min-h-[20px] max-w-[20px] max-h-[20px]'>
                             <Image
-                                src='/icon-tick.svg'
+                                src='/icon/icon-tick.svg'
                                 alt='Tick'
                                 width={20}
                                 height={20}

@@ -17,7 +17,9 @@ const About = () => {
             </div>
             <div className='grid grid-cols-2 gap-6'>
                 <div className='col-span-2 xl:col-span-1'>
-                    <Gallery images={['/gallery-1.jpg', '/gallery-2.jpg', '/gallery-3.jpg']} />
+                    <Gallery
+                        images={['/gallery/gallery-1.avif', '/gallery/gallery-2.avif', '/gallery/gallery-3.avif']}
+                    />
                 </div>
                 <div className='col-span-2 xl:col-span-1 grid grid-cols-1 gap-6'>
                     <p className='text-center md:text-left font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
@@ -38,7 +40,7 @@ const About = () => {
                             <div className='relative h-[240px] m-2'>
                                 <Image
                                     fill
-                                    src={'/gallery-1.jpg'}
+                                    src={'/about/security-house.avif'}
                                     alt={'Alt'}
                                     className='rounded-[25px]'
                                 />
@@ -48,7 +50,7 @@ const About = () => {
                             <div className='relative h-[240px] m-2'>
                                 <Image
                                     fill
-                                    src={'/gallery-1.jpg'}
+                                    src={'/about/appartment-lux.avif'}
                                     alt={'Alt'}
                                     className='rounded-[25px]'
                                 />

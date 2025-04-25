@@ -19,7 +19,7 @@ const Footer = () => {
             <div className='flex flex-col py-5 xl:py-0 gap-4 lg:flex-row justify-between items-center min-h-[120px] mx-0 md:mx-8 px-8 rounded-t-[29px] bg-[#F8F8F8]'>
                 <div>
                     <Image
-                        src='/logo.svg'
+                        src='/icon/logo.svg'
                         alt='Лого'
                         width={288}
                         height={78}
@@ -63,13 +63,6 @@ const Footer = () => {
                             className='cursor-pointer font-secondary text-[14px] md:text-[18px] text-black mr-5'
                             onClick={() => scrollToSection('gallery')}>
                             Галерея
-                        </motion.li>
-                        <motion.li
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className='hidden md:block cursor-pointer font-secondary text-[14px] md:text-[18px] text-black'
-                            onClick={() => scrollToSection('contacts')}>
-                            Контакти
                         </motion.li>
                     </ul>
                 </nav>

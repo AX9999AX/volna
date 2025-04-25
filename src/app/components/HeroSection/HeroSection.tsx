@@ -16,7 +16,7 @@ const HeroSection = () => {
     }
 
     return (
-        <section className="w-full bg-none md:bg-[url('/bg-hero.jpg')] bg-cover bg-center h-auto md:h-[980px]">
+        <section className="w-full bg-none md:bg-[url('/bg/bg-hero.avif')] bg-cover bg-center h-auto md:h-[980px]">
             <Header />
             <div className='container mx-auto px-8 mt-6 md:mt-32 2xl:mt-60'>
                 <div className='hidden md:flex mb-3'>
@@ -60,7 +60,7 @@ const HeroSection = () => {
                         className='hidden 2xl:flex cursor-pointer absolute bottom-[20px] right-0 bg-[#F2F2F2] p-4 rounded-2xl font-secondary text-[15px] text-black'>
                         Про Житловий Комплекс
                         <Image
-                            src={'/arrow-down.svg'}
+                            src={'/icon/arrow-down.svg'}
                             alt={'arrow'}
                             width={20}
                             height={20}
@@ -75,7 +75,7 @@ const HeroSection = () => {
                         <button className='hidden md:flex 2xl:hidden cursor-pointer bg-[#F2F2F2] p-4 rounded-2xl font-secondary text-[15px] text-black'>
                             Про Житловий Комплекс
                             <Image
-                                src={'/arrow-down.svg'}
+                                src={'/icon/arrow-down.svg'}
                                 alt={'arrow'}
                                 width={20}
                                 height={20}
@@ -86,7 +86,7 @@ const HeroSection = () => {
                 </div>
                 <div className='flex md:hidden justify-center items-center my-4'>
                     <Image
-                        src={'/bg-hero.jpg'}
+                        src={'/bg/bg-hero.avif'}
                         alt='bg'
                         width={327}
                         height={218}
@@ -134,7 +134,7 @@ const HeroSection = () => {
                             className='cursor-pointer flex font-secondary text-[15px] leading-[150%] px-5 py-3 border-2 rounded-4xl mr-3 md:mt-4 lg:mt-0 border-[#F2F2F2] bg-[#B4EF7B]'>
                             Консультація по оренді
                             <Image
-                                src={'/arrow-up.svg'}
+                                src={'/icon/arrow-up.svg'}
                                 alt={'arrow'}
                                 width={20}
                                 height={20}
@@ -147,7 +147,7 @@ const HeroSection = () => {
                     <button className='my-5 cursor-pointer flex font-secondary text-[15px] leading-[150%] px-5 py-3 border-2 rounded-4xl mr-3 md:mt-4 lg:mt-0 border-[#F2F2F2] bg-[#B4EF7B]'>
                         Консультація по оренді
                         <Image
-                            src={'/arrow-up.svg'}
+                            src={'/icon/arrow-up.svg'}
                             alt={'arrow'}
                             width={20}
                             height={20}

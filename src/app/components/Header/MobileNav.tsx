@@ -34,8 +34,8 @@ const MobileNav = () => {
                 <Image
                     width={32}
                     height={32}
-                    src={'/menu-mobile.svg'}
-                    alt={''}
+                    src={'/icon/menu-mobile.svg'}
+                    alt={'Меню'}
                 />
             </button>
             <AnimatePresence>
@@ -68,14 +68,14 @@ const MobileNav = () => {
                             className='fixed inset-0 z-50 flex flex-col justify-between text-black'>
                             <div className='flex justify-between mx-6 my-3 z-50'>
                                 <Image
-                                    src='/logo.svg'
+                                    src='/icon/logo.svg'
                                     alt='Лого'
                                     width={121}
                                     height={33}
                                 />
                                 <button onClick={() => setIsOpen(false)}>
                                     <Image
-                                        src='/icon-close.svg'
+                                        src='/icon/icon-close.svg'
                                         alt='Закрыть'
                                         width={40}
                                         height={40}

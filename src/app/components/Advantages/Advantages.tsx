@@ -27,7 +27,7 @@ const Advantages = () => {
                         <div className='relative h-[200px] m-2 rounded-2xl'>
                             <Image
                                 fill
-                                src={'/parking.jpg'}
+                                src={'/advantages/parking.avif'}
                                 alt='Parking'
                                 className='object-cover rounded-2xl'
                             />
@@ -42,7 +42,7 @@ const Advantages = () => {
                     <Image
                         width={672}
                         height={275}
-                        src='/test.jpg'
+                        src='/advantages/territory.jpg'
                         alt='Gallery 1'
                         className='hidden 2xl:block absolute -z-1 bottom-0 w-full xl:h-[340px] 2xl:h-[275px]'
                     />

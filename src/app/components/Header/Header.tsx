@@ -21,7 +21,7 @@ const Header = () => {
             <div className='flex justify-between items-center h-[63px] mx-0 md:mx-8 px-8 rounded-b-[29px] bg-[#F8F8F8]'>
                 <Link href={'/'}>
                     <Image
-                        src='/logo.svg'
+                        src='/icon/logo.svg'
                         alt='Лого'
                         width={121}
                         height={33}

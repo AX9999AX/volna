@@ -9,7 +9,7 @@ const DynamicMap = dynamic(() => import('./LocationMap'), {
 const Location = () => {
     return (
         <section className='bg-[#F8F8F8]'>
-            <div className='container mx-auto'>
+            <div className='container mx-auto px-8'>
                 <div className='flex xl:hidden justify-between items-center flex-wrap pt-12'>
                     <h2 className='w-full xl:w-auto text-center xl:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
                         Локація та інфраструктура

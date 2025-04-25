@@ -86,7 +86,7 @@ const HeroSection = () => {
                 </div>
                 <div className='flex md:hidden justify-center items-center my-4'>
                     <Image
-                        src={'/bg/bg-hero.avif'}
+                        src={'/bg/bg-mobile.jpg'}
                         alt='bg'
                         width={327}
                         height={218}

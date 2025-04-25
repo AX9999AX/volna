@@ -56,7 +56,7 @@ const About = () => {
                                     fill
                                     src={'/about/security-house.avif'}
                                     alt={'Alt'}
-                                    className='rounded-[25px]'
+                                    className='object-cover rounded-[25px]'
                                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                                 />
                             </div>
@@ -67,7 +67,7 @@ const About = () => {
                                     fill
                                     src={'/about/appartment-lux.avif'}
                                     alt={'Alt'}
-                                    className='rounded-[25px]'
+                                    className='object-cover rounded-[25px]'
                                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                                 />
                             </div>

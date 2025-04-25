@@ -43,17 +43,17 @@ const Advantages = () => {
                         </p>
                     </div>
                     <Image
-                        width={672}
+                        width={716}
                         height={275}
                         src='/advantages/territory.jpg'
                         alt='Gallery 1'
-                        className='hidden 2xl:block absolute -z-1 bottom-0 w-full xl:h-[340px] 2xl:h-[275px]'
+                        className='hidden 2xl:block absolute -z-1 bottom-0 w-full h-auto'
                         sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                     />
                 </div>
                 <div className='col-span-2 md:col-span-1'>
                     <div className='bg-[#F8F8F8] p-6 mb-5 rounded-[33px]'>
-                        <h3 className='text-center md:text-left font-primary font-medium text-[20px] md:text-[26px] leading-[128%]'>
+                        <h3 className='mb-6 text-center md:text-left font-primary font-medium text-[20px] md:text-[26px] leading-[128%]'>
                             Автономність та екологічність
                         </h3>
                         <AnimatedList
@@ -66,7 +66,7 @@ const Advantages = () => {
                         />
                     </div>
                     <div className='bg-[#F8F8F8] p-6 rounded-[33px]'>
-                        <h3 className='text-center md:text-left font-primary font-medium text-[20px] md:text-[26px] leading-[128%]'>
+                        <h3 className='mb-6 text-center md:text-left font-primary font-medium text-[20px] md:text-[26px] leading-[128%]'>
                             Безпека Житлового Комплексу
                         </h3>
                         <AnimatedList

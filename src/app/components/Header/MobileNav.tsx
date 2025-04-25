@@ -36,6 +36,7 @@ const MobileNav = () => {
                     height={32}
                     src={'/icon/menu-mobile.svg'}
                     alt={'Меню'}
+                    className='h-[32px] w-[32px]'
                 />
             </button>
             <AnimatePresence>

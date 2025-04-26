@@ -11,12 +11,12 @@ const Territory = (props: IMegaGallery) => {
 
     return (
         <>
-            <div className='grid grid-cols-3 gap-4 mt-12'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-12'>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] md:min-h-0 rounded-[20px]'>
                     <Image
                         fill
                         src={'/mega-gallery/mega-gallery-territory-1.jpg'}
@@ -25,7 +25,7 @@ const Territory = (props: IMegaGallery) => {
                         sizes='50vw'
                     />
                 </motion.div>
-                <div className='col-span-2'>
+                <div className='order-1 md:order-0 col-span-1 md:col-span-2'>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -47,7 +47,7 @@ const Territory = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
                     <Image
                         fill
                         src={'/mega-gallery/mega-gallery-territory-2.jpg'}
@@ -60,7 +60,7 @@ const Territory = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
                     <Image
                         fill
                         src={'/mega-gallery/mega-gallery-territory-3.jpg'}
@@ -73,7 +73,7 @@ const Territory = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
                     <Image
                         fill
                         src={'/mega-gallery/mega-gallery-territory-4.jpg'}
@@ -88,7 +88,7 @@ const Territory = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
                             <Image
                                 fill
                                 src={'/mega-gallery/mega-gallery-territory-5.jpg'}
@@ -101,7 +101,7 @@ const Territory = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
                             <Image
                                 fill
                                 src={'/mega-gallery/mega-gallery-territory-6.jpg'}
@@ -114,7 +114,7 @@ const Territory = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
                             <Image
                                 fill
                                 src={'/mega-gallery/mega-gallery-territory-7.jpg'}

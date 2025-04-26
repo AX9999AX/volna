@@ -1,29 +1,11 @@
 'use client'
 
 import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import { MegaGalleryType } from './MegaGallery.type'
-import Player from '@vimeo/player'
 
 const MegaGallery = () => {
-    const iframeRef = useRef(null)
-    const [showControls, setShowControls] = useState(false)
     const [galleryType, setGallaryType] = useState<MegaGalleryType>(MegaGalleryType.Territory)
-
-    useEffect(() => {
-        if (iframeRef.current) {
-            const player = new Player(iframeRef.current)
-
-            player.on('play', () => {
-                setShowControls(true)
-            })
-        }
-    }, [])
-
-    const videoSrc = showControls
-        ? 'https://player.vimeo.com/video/115783408?controls=0'
-        : 'https://player.vimeo.com/video/115783408?controls=0'
 
     return (
         <section
@@ -37,12 +19,13 @@ const MegaGallery = () => {
                     Побачити — щоб відчути
                 </p>
             </div>
+
             <div className='flex justify-between items-center flex-wrap'>
-                <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E] w-[50%]'>
+                <p className='w-full xl:w-[50%] font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Ознайомтесь з атмосферою ЖК VOLNA через фото та відео. Побачте комплекс з висоти, інтер’єри
                     апартаментів та кімнат, місць загального користування, ландшафтний дизайн території.
                 </p>
-                <div className='flex gap-4'>
+                <div className='w-full xl:w-auto mt-6 xl:mt-0 flex gap-4 justify-center xl:justify-baseline'>
                     <button
                         className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] ${
                             galleryType === MegaGalleryType.Territory ? 'bg-btn-active' : 'bg-btn-default'
@@ -63,54 +46,27 @@ const MegaGallery = () => {
             <div className='grid grid-cols-3 gap-4 mt-12'>
                 <div className='grid grid-cols-1 grid-rows-3 gap-6'>
                     <div className='relative overflow-hidden rounded-[20px]'>
-                        <AnimatePresence>
-                            <motion.div
-                                key={galleryType}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 1.4 }}>
-                                <Image
-                                    fill
-                                    src={
-                                        galleryType === MegaGalleryType.Interior
-                                            ? '/gallery-section-2.jpg'
-                                            : '/gallery-section-1.jpg'
-                                    }
-                                    alt='Gallery 1'
-                                    className='object-cover'
-                                />
-                            </motion.div>
-                        </AnimatePresence>
+                        <Image
+                            fill
+                            src={'/mega-gallery/mega-gallery-territory-1.jpg'}
+                            alt='Gallery 1'
+                            className='object-cover'
+                        />
                     </div>
                     <div className='row-span-2 relative overflow-hidden rounded-[20px]'>
-                        <AnimatePresence>
-                            <motion.div
-                                key={galleryType}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 1.4 }}>
-                                <Image
-                                    fill
-                                    src={
-                                        galleryType === MegaGalleryType.Interior
-                                            ? '/gallery-section-2.jpg'
-                                            : '/gallery-section-1.jpg'
-                                    }
-                                    alt='Gallery 1'
-                                    className='object-cover'
-                                />
-                            </motion.div>
-                        </AnimatePresence>
+                        <Image
+                            fill
+                            src={'/mega-gallery/mega-gallery-territory-2.jpg'}
+                            alt='Gallery 1'
+                            className='object-cover'
+                        />
                     </div>
                 </div>
                 <div className='col-span-2'>
                     <div className='grid grid-cols-1 grid-rows-[auto_260px] gap-6'>
                         <div className='relative aspect-video overflow-hidden rounded-[20px]'>
                             <iframe
-                                ref={iframeRef}
-                                src={videoSrc}
+                                src={'https://player.vimeo.com/video/115783408?controls=0&autoplay=0&muted=1'}
                                 className='absolute top-0 left-0 w-full h-full'
                                 allow='autoplay; fullscreen; picture-in-picture'
                                 allowFullScreen
@@ -120,7 +76,7 @@ const MegaGallery = () => {
                             <div className='relative overflow-hidden rounded-[20px]'>
                                 <Image
                                     fill
-                                    src='/gallery-section-3.jpg'
+                                    src={'/mega-gallery/mega-gallery-territory-3.jpg'}
                                     alt='Gallery 3'
                                     className='object-cover'
                                 />
@@ -128,7 +84,7 @@ const MegaGallery = () => {
                             <div className='relative overflow-hidden rounded-[20px]'>
                                 <Image
                                     fill
-                                    src='/gallery-section-4.jpg'
+                                    src={'/mega-gallery/mega-gallery-territory-4.jpg'}
                                     alt='Gallery 4'
                                     className='object-cover'
                                 />
@@ -136,6 +92,13 @@ const MegaGallery = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='flex justify-center items-center mt-6'>
+                <button
+                    className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] bg-btn-active rounded-2xl`}
+                    onClick={() => setGallaryType(MegaGalleryType.Interior)}>
+                    Переглянути Більше
+                </button>
             </div>
         </section>
     )

@@ -145,7 +145,9 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className='flex md:hidden justify-center items-center'>
-                    <button className='my-5 cursor-pointer flex font-secondary text-[15px] leading-[150%] px-5 py-3 border-2 rounded-4xl mr-3 md:mt-4 lg:mt-0 border-[#F2F2F2] bg-[#B4EF7B]'>
+                    <button
+                        onClick={() => scrollToSection('contacts')}
+                        className='my-5 cursor-pointer flex font-secondary text-[15px] leading-[150%] px-5 py-3 border-2 rounded-4xl mr-3 md:mt-4 lg:mt-0 border-[#F2F2F2] bg-[#B4EF7B]'>
                         Консультація по оренді
                         <Image
                             src={'/icon/arrow-up.svg'}

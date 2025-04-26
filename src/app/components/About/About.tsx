@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import Gallery from '../Gallery/Gallery'
 import { Stats } from '../Stats/Stats'
 import Image from 'next/image'
@@ -45,11 +46,13 @@ const About = () => {
                                 Комфорт та безпека мешканців
                             </h3>
                             <div className='flex justify-center mb-4'>
-                                <button
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ type: 'spring', stiffness: 300 }}
                                     onClick={() => scrollToSection('advantages')}
                                     className='font-secondary text-[15px] cursor-pointer border-2 border-[#E5E5E5] bg-white rounded-[24px] w-[200px] h-[48px]'>
                                     Переваги Проживання
-                                </button>
+                                </motion.button>
                             </div>
                             <div className='relative min-h-[240px] m-2'>
                                 <Image
@@ -78,9 +81,19 @@ const About = () => {
                                 ₴4.000
                             </div>
                             <div className='flex justify-center mt-5'>
-                                <button className='font-secondary text-[15px] cursor-pointer bg-[#B4EF7B] rounded-[24px] w-[200px] h-[48px]'>
+                                <motion.button
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ type: 'spring', stiffness: 300 }}
+                                    className='flex justify-center items-center font-secondary text-[15px] cursor-pointer bg-[#B4EF7B] rounded-[24px] px-4 h-[48px]'>
                                     Варіанти Проживання
-                                </button>
+                                    <Image
+                                        src={'/icon/icon-arrow-right.svg'}
+                                        alt={'arrow'}
+                                        width={20}
+                                        height={20}
+                                        className='h-[20px] w-[20px]'
+                                    />
+                                </motion.button>
                             </div>
                         </div>
                     </div>

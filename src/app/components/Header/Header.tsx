@@ -40,7 +40,7 @@ const Header = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className='cursor-pointer font-secondary text-[18px] text-black mr-10'
-                            onClick={() => scrollToSection('rooms')}>
+                            onClick={() => scrollToSection('appartments')}>
                             Варіанти Проживання
                         </motion.li>
                         <motion.li

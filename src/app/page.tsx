@@ -1,5 +1,6 @@
 import About from './components/About/About'
 import Advantages from './components/Advantages/Advantages'
+import Appartments from './components/Appartments/Appartments'
 import Contacts from './components/Contacts/Contacts'
 import Footer from './components/Footer/Footer'
 import HeroSection from './components/HeroSection/HeroSection'
@@ -11,6 +12,7 @@ export default function Home() {
         <>
             <HeroSection />
             <About />
+            <Appartments />
             <Advantages />
             <Location />
             {/* <MegaGallery /> */}

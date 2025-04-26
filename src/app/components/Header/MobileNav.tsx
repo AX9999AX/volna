@@ -53,6 +53,7 @@ const MobileNav = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
+                            transition={{ duration: 0.5, ease: 'easeInOut' }}
                             className='bg-[#B4EF7B] fixed inset-0 z-[1001] flex flex-col justify-between text-black'>
                             <div className='flex justify-between mx-6 my-3 z-[1001]'>
                                 <Image

@@ -93,7 +93,6 @@ const HeroSection = () => {
                         className='rounded-2xl'
                         priority
                         quality={75}
-                        placeholder='blur'
                         loading='eager'
                     />
                 </div>

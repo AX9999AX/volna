@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
     return (
         <html
-            lang='ua'
+            lang='uk'
             className={`${inter.variable} ${montserrat.variable}`}>
             <body className={`antialiased`}>{children}</body>
         </html>

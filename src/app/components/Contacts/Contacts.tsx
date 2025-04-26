@@ -82,7 +82,7 @@ const Contacts = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-12 xl:col-span-6 2xl:col-span-5 bg-[#B4EF7B] rounded-[29px] p-6 shadow-md'>
+                <div className='flex justify-center flex-col col-span-12 xl:col-span-6 2xl:col-span-5 bg-[#B4EF7B] rounded-[29px] p-6 shadow-md'>
                     <div className='flex flex-col sm:flex-row sm:items-center justify-between mb-4'>
                         <div className='font-primary font-medium text-xl sm:text-2xl leading-[128%] text-gray-900 mb-2 sm:mb-0'>
                             Адреса
@@ -90,9 +90,8 @@ const Contacts = () => {
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: 'spring', stiffness: 300 }}
-                            href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6А'
+                            href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6'
                             target='_blank'
-                            rel='noopener noreferrer'
                             className='bg-white text-gray-800 rounded-2xl px-4 py-2 font-secondary text-[12px] sm:text-base'>
                             Київська обл., Золочівська ТГ, вул. Квіткова, 21-А
                         </motion.a>

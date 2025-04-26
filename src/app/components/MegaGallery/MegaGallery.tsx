@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { MegaGalleryType } from './MegaGallery.type'
 
 const MegaGallery = () => {
+    const [isViewMore, setIsViewMore] = useState<boolean>(false)
     const [galleryType, setGallaryType] = useState<MegaGalleryType>(MegaGalleryType.Territory)
 
     return (
@@ -66,9 +67,11 @@ const MegaGallery = () => {
                     <div className='grid grid-cols-1 grid-rows-[auto_260px] gap-6'>
                         <div className='relative aspect-video overflow-hidden rounded-[20px]'>
                             <iframe
-                                src={'https://player.vimeo.com/video/115783408?controls=0&autoplay=0&muted=1'}
+                                src={
+                                    'https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&background=1&autoplay=1&muted=1&loop=1'
+                                }
                                 className='absolute top-0 left-0 w-full h-full'
-                                allow='autoplay; fullscreen; picture-in-picture'
+                                allow='autoplay;'
                                 allowFullScreen
                             />
                         </div>
@@ -93,13 +96,45 @@ const MegaGallery = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center items-center mt-6'>
-                <button
-                    className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] bg-btn-active rounded-2xl`}
-                    onClick={() => setGallaryType(MegaGalleryType.Interior)}>
-                    Переглянути Більше
-                </button>
-            </div>
+
+            {!isViewMore && (
+                <div className='flex justify-center items-center mt-6'>
+                    <button
+                        className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] bg-btn-active rounded-2xl`}
+                        onClick={() => setIsViewMore(true)}>
+                        Переглянути Більше
+                    </button>
+                </div>
+            )}
+
+            {isViewMore && (
+                <div className='grid grid-cols-3 gap-4 mt-4'>
+                    <div className='relative min-h-[260px] overflow-hidden rounded-[20px]'>
+                        <Image
+                            fill
+                            src={'/mega-gallery/mega-gallery-territory-5.jpg'}
+                            alt='Gallery 1'
+                            className='object-cover'
+                        />
+                    </div>
+                    <div className='relative overflow-hidden rounded-[20px]'>
+                        <Image
+                            fill
+                            src={'/mega-gallery/mega-gallery-territory-6.jpg'}
+                            alt='Gallery 1'
+                            className='object-cover'
+                        />
+                    </div>
+                    <div className='relative overflow-hidden rounded-[20px]'>
+                        <Image
+                            fill
+                            src={'/mega-gallery/mega-gallery-territory-7.jpg'}
+                            alt='Gallery 1'
+                            className='object-cover'
+                        />
+                    </div>
+                </div>
+            )}
         </section>
     )
 }

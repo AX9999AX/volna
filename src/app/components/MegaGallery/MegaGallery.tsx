@@ -1,12 +1,17 @@
 'use client'
 
 import Image from 'next/image'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { MegaGalleryType } from './MegaGallery.type'
+import { useInView } from 'framer-motion'
+import { Loader2 } from 'lucide-react'
 
 const MegaGallery = () => {
+    const ref = useRef(null)
     const [isViewMore, setIsViewMore] = useState<boolean>(false)
     const [galleryType, setGallaryType] = useState<MegaGalleryType>(MegaGalleryType.Territory)
+    const isInView = useInView(ref, { once: true, amount: 0.5 })
+    const [loaded, setLoaded] = useState(false)
 
     return (
         <section
@@ -46,12 +51,13 @@ const MegaGallery = () => {
 
             <div className='grid grid-cols-3 gap-4 mt-12'>
                 <div className='grid grid-cols-1 grid-rows-3 gap-6'>
-                    <div className='relative overflow-hidden rounded-[20px]'>
+                    <div className='relative overflow-hidden h-[260px] rounded-[20px]'>
                         <Image
                             fill
                             src={'/mega-gallery/mega-gallery-territory-1.jpg'}
                             alt='Gallery 1'
                             className='object-cover'
+                            sizes='50vw'
                         />
                     </div>
                     <div className='row-span-2 relative overflow-hidden rounded-[20px]'>
@@ -60,20 +66,34 @@ const MegaGallery = () => {
                             src={'/mega-gallery/mega-gallery-territory-2.jpg'}
                             alt='Gallery 1'
                             className='object-cover'
+                            sizes='50vw'
                         />
                     </div>
                 </div>
                 <div className='col-span-2'>
                     <div className='grid grid-cols-1 grid-rows-[auto_260px] gap-6'>
-                        <div className='relative aspect-video overflow-hidden rounded-[20px]'>
-                            <iframe
-                                src={
-                                    'https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&background=1&autoplay=1&muted=1&loop=1'
-                                }
-                                className='absolute top-0 left-0 w-full h-full'
-                                allow='autoplay;'
-                                allowFullScreen
-                            />
+                        <div
+                            ref={ref}
+                            className='relative aspect-video overflow-hidden rounded-[20px]'>
+                            {isInView && (
+                                <>
+                                    {!loaded && (
+                                        <div className='absolute inset-0 z-10 flex items-center justify-center bg-black/40'>
+                                            <Loader2 className='w-10 h-10 animate-spin text-white' />
+                                        </div>
+                                    )}
+
+                                    <iframe
+                                        src={
+                                            'https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&background=1&autoplay=1&muted=1&loop=1&dnt=1'
+                                        }
+                                        className='absolute top-0 left-0 w-full h-full'
+                                        allow='autoplay;'
+                                        allowFullScreen
+                                        onLoad={() => setLoaded(true)}
+                                    />
+                                </>
+                            )}
                         </div>
                         <div className='grid grid-cols-2 gap-6'>
                             <div className='relative overflow-hidden rounded-[20px]'>
@@ -82,6 +102,7 @@ const MegaGallery = () => {
                                     src={'/mega-gallery/mega-gallery-territory-3.jpg'}
                                     alt='Gallery 3'
                                     className='object-cover'
+                                    sizes='50vw'
                                 />
                             </div>
                             <div className='relative overflow-hidden rounded-[20px]'>
@@ -90,6 +111,7 @@ const MegaGallery = () => {
                                     src={'/mega-gallery/mega-gallery-territory-4.jpg'}
                                     alt='Gallery 4'
                                     className='object-cover'
+                                    sizes='50vw'
                                 />
                             </div>
                         </div>
@@ -115,6 +137,7 @@ const MegaGallery = () => {
                             src={'/mega-gallery/mega-gallery-territory-5.jpg'}
                             alt='Gallery 1'
                             className='object-cover'
+                            sizes='50vw'
                         />
                     </div>
                     <div className='relative overflow-hidden rounded-[20px]'>
@@ -123,6 +146,7 @@ const MegaGallery = () => {
                             src={'/mega-gallery/mega-gallery-territory-6.jpg'}
                             alt='Gallery 1'
                             className='object-cover'
+                            sizes='50vw'
                         />
                     </div>
                     <div className='relative overflow-hidden rounded-[20px]'>
@@ -131,6 +155,7 @@ const MegaGallery = () => {
                             src={'/mega-gallery/mega-gallery-territory-7.jpg'}
                             alt='Gallery 1'
                             className='object-cover'
+                            sizes='50vw'
                         />
                     </div>
                 </div>

@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 const customIcon = L.divIcon({
     className: 'scalable-icon',
-    html: `<img src="/icon/icon-marker.svg" style="width: 64px; height: 96px;" />`,
+    html: `<img alt='Marker' src="/icon/icon-marker.svg" style="width: 64px; height: 96px;" />`,
     iconSize: [64, 96],
     iconAnchor: [32, 96],
 })

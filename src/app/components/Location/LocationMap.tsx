@@ -44,7 +44,7 @@ const LocationMap = () => {
             <MapContainer
                 center={position}
                 zoom={14}
-                scrollWheelZoom={true}
+                scrollWheelZoom={false}
                 style={{ width: '100%', height: '100%' }}>
                 <TileLayer url='https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png' />
                 <Marker

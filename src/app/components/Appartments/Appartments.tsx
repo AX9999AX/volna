@@ -1,3 +1,4 @@
+import AppartmentHalfLux from '../Appartment/AppartmentHalfLux'
 import AppartmentLux from '../Appartment/AppartmentLux'
 
 const Appartments = () => {
@@ -14,6 +15,7 @@ const Appartments = () => {
                 </p>
             </div>
             <AppartmentLux />
+            <AppartmentHalfLux />
         </section>
     )
 }

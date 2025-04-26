@@ -82,6 +82,7 @@ const About = () => {
                             </div>
                             <div className='flex justify-center mt-5'>
                                 <motion.button
+                                    onClick={() => scrollToSection('appartments')}
                                     whileHover={{ scale: 1.05 }}
                                     transition={{ type: 'spring', stiffness: 300 }}
                                     className='flex justify-center items-center font-secondary text-[15px] cursor-pointer bg-[#B4EF7B] rounded-[24px] px-4 h-[48px]'>

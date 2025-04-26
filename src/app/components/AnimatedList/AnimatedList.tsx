@@ -20,7 +20,7 @@ const itemVariants = {
 }
 
 const AnimatedList: React.FC<IAnimatedList> = (props: IAnimatedList) => {
-    const { items, bgColorMd, isTextLeftMd, isPadding } = props
+    const { items, bgColorMd, isTextLeftMd, isPadding, isMargin } = props
 
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
@@ -28,6 +28,7 @@ const AnimatedList: React.FC<IAnimatedList> = (props: IAnimatedList) => {
 
     const allignClass = isTextLeftMd ? 'text-left' : 'text-center md:text-left'
     const paddingClass = isPadding ? 'p-0' : 'p-3 md:p-0'
+    const marginClass = isMargin ? 'my-1 md:my-3' : 'my-3'
 
     useEffect(() => {
         if (isInView) {
@@ -44,7 +45,7 @@ const AnimatedList: React.FC<IAnimatedList> = (props: IAnimatedList) => {
             {items.map((item, index) => (
                 <motion.li
                     key={index}
-                    className='my-3'
+                    className={marginClass}
                     variants={itemVariants}>
                     <div className='flex items-start'>
                         <div className='hidden md:block mr-4 min-w-[20px] min-h-[20px] max-w-[20px] max-h-[20px]'>

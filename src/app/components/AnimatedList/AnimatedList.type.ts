@@ -12,4 +12,5 @@ export interface IAnimatedList {
     bgColorMd?: string
     isTextLeftMd?: boolean
     isPadding?: boolean
+    isMargin?: boolean
 }

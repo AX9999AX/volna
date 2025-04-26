@@ -1,11 +1,11 @@
 'use client'
 
 import { motion, useInView } from 'framer-motion'
-import AnimatedList from '../AnimatedList/AnimatedList'
 import Image from 'next/image'
 import { useRef, useState } from 'react'
+import AnimatedList from '../AnimatedList/AnimatedList'
 
-export default function AppartmentLux() {
+const AppartmentLux = () => {
     const ref = useRef(null)
     const [isViewMore, setIsViewMore] = useState<boolean>(false)
     const isInView = useInView(ref, { once: true })
@@ -43,7 +43,7 @@ export default function AppartmentLux() {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='relative min-h-[250px] md:min-h-[300px] m-2'>
+                            className='hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'>
                             <Image
                                 fill
                                 src={'/appartments/lux-2.jpg'}
@@ -56,7 +56,7 @@ export default function AppartmentLux() {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='relative min-h-[250px] md:min-h-[300px] m-2'>
+                            className='hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'>
                             <Image
                                 fill
                                 src={'/appartments/lux-3.jpg'}
@@ -67,6 +67,32 @@ export default function AppartmentLux() {
                         </motion.div>
                         {isViewMore && (
                             <>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.95 }}
+                                    animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                                    transition={{ duration: 0.6, delay: 0.3 }}
+                                    className='block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'>
+                                    <Image
+                                        fill
+                                        src={'/appartments/lux-2.jpg'}
+                                        alt={'Alt'}
+                                        className='object-cover rounded-[25px]'
+                                        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
+                                    />
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.95 }}
+                                    animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                                    transition={{ duration: 0.6, delay: 0.3 }}
+                                    className='block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'>
+                                    <Image
+                                        fill
+                                        src={'/appartments/lux-3.jpg'}
+                                        alt={'Alt'}
+                                        className='object-cover rounded-[25px]'
+                                        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
+                                    />
+                                </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -122,11 +148,13 @@ export default function AppartmentLux() {
                     )}
                 </div>
                 <div className='w-full xl:w-1/2'>
-                    <p className='text-center xl:text-left font-secondary text-[18px] leading-[150%] text-[#4E4E4E] mb-5'>
+                    <p className='text-center xl:text-left font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E] mb-5'>
                         В «Комфортній» частини ЖК «VOLNA», зі своєю окремою рецепцією, розташовано 69 двомісних
                         апартаментів категорії «люкс» та «напівлюкс»
                     </p>
-                    <p className='text-center md:text-left font-secondary text-[20px] font-bold'>Облаштований:</p>
+                    <p className='text-center md:text-left font-secondary text-[14px] md:text-[20px] font-bold'>
+                        Облаштований:
+                    </p>
                     <AnimatedList
                         items={[
                             {
@@ -181,9 +209,18 @@ export default function AppartmentLux() {
                         bgColorMd='md:bg-white'
                         isTextLeftMd={true}
                         isPadding={true}
+                        isMargin={true}
                     />
+                </div>
+            </div>
+            <div className='flex justify-center items-center my-4'>
+                <div className='block md:hidden bg-[#B4EF7B] px-6 py-2 rounded-2xl'>
+                    <span className='font-secondary font-bold text-[20px] lg:text-[32px]'>₴11.000</span>
+                    <span className='font-secondary text-[12px] text-[#18181B]'>/місяць</span>
                 </div>
             </div>
         </div>
     )
 }
+
+export default AppartmentLux

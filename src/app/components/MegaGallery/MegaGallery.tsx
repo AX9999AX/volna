@@ -2,12 +2,15 @@
 
 import { useRef, useState } from 'react'
 import { MegaGalleryType } from './MegaGallery.type'
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
+import Territory from './Territory'
 
 const MegaGallery = () => {
     const ref = useRef(null)
     const [galleryType, setGallaryType] = useState<MegaGalleryType>(MegaGalleryType.Territory)
-    // const isInView = useInView(ref, { once: true })
+    const isInView = useInView(ref, {
+        once: true,
+    })
 
     return (
         <section
@@ -32,7 +35,7 @@ const MegaGallery = () => {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
-                        className={`cursor-pointer font-secondary text-[15px] text-black p-4 ${
+                        className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] ${
                             galleryType === MegaGalleryType.Territory ? 'bg-btn-active' : 'bg-btn-default'
                         }  rounded-2xl`}
                         onClick={() => setGallaryType(MegaGalleryType.Territory)}>
@@ -41,7 +44,7 @@ const MegaGallery = () => {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
-                        className={`cursor-pointer font-secondary text-[15px] text-black p-4 ${
+                        className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] ${
                             galleryType === MegaGalleryType.Interior ? 'bg-btn-active' : 'bg-btn-default'
                         }  rounded-2xl`}
                         onClick={() => setGallaryType(MegaGalleryType.Interior)}>
@@ -49,6 +52,7 @@ const MegaGallery = () => {
                     </motion.button>
                 </div>
             </div>
+            <Territory isInView={isInView} />
         </section>
     )
 }

@@ -26,9 +26,9 @@ export const metadata: Metadata = {
             'Cучасний комплекс для комфортного проживання в Києві, на закритій території з охороною, на березі Дніпра.',
         images: [
             {
-                url: '/gallery/gallery-2.avif',
-                width: 1280,
-                height: 853,
+                url: 'https://volna-psi.vercel.app/icon/logo.svg',
+                width: 120,
+                height: 32,
                 alt: 'Житловий комплекс «Volna»',
             },
         ],

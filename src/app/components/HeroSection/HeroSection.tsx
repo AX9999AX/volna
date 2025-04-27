@@ -84,15 +84,17 @@ const HeroSection = () => {
                         </button>
                     </div>
                 </div>
-                <div className='flex md:hidden justify-center items-center my-4'>
-                    <Image
-                        src={'/bg/bg-mobile.webp'}
-                        alt='ЖК Волна'
-                        width={250}
-                        height={172}
-                        className='rounded-2xl'
-                        priority
-                    />
+                <div className='w-full flex justify-center'>
+                    <div className='relative flex md:hidden w-[250px] min-h-[172px] justify-center items-center my-4'>
+                        <Image
+                            src={'/bg/bg-mobile.webp'}
+                            alt='ЖК Волна'
+                            fill
+                            className='rounded-2xl'
+                            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                            priority
+                        />
+                    </div>
                 </div>
                 <div className='bg-[#F2F4F7] md:bg-white rounded-3xl p-5 mt-5'>
                     <h2 className='text-black text-center md:text-left font-primary font-medium text-[16px] md:text-[32px] leading-[128%] mb-5'>

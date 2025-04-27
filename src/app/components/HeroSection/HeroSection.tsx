@@ -91,6 +91,7 @@ const HeroSection = () => {
                         width={250}
                         height={172}
                         className='rounded-2xl'
+                        priority
                     />
                 </div>
                 <div className='bg-[#F2F4F7] md:bg-white rounded-3xl p-5 mt-5'>

@@ -18,7 +18,7 @@ const HeroSection = () => {
     return (
         <section className="w-full bg-none md:bg-[url('/bg/bg-hero.avif')] bg-cover bg-center h-auto md:h-[980px]">
             <Header />
-            <div className='container mx-auto px-8 mt-6 md:mt-32 2xl:mt-60'>
+            <div className='container mx-auto px-8 mt-6 md:mt-32 2xl:mt-48'>
                 <div className='hidden md:flex mb-3 flex-wrap'>
                     <div
                         className={`flex justify-center items-center font-secondary text-[15px] text-black bg-btn-active rounded-4xl mr-3 px-4 py-3`}>

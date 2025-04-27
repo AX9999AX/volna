@@ -75,7 +75,7 @@ const MobileNav = () => {
                             <ul className='flex flex-col justify-center items-center z-50'>
                                 {[
                                     ['about', 'Про Нас'],
-                                    ['rooms', 'Варіанти Проживання'],
+                                    ['appartments', 'Варіанти Проживання'],
                                     ['gallery', 'Галерея'],
                                     ['contacts', 'Контакти'],
                                 ].map(([id, label]) => (
@@ -91,7 +91,10 @@ const MobileNav = () => {
                             </ul>
 
                             <div className='flex justify-center mb-12 z-50'>
-                                <a className='flex justify-center items-center cursor-pointer font-secondary text-[15px] text-black w-[250px] h-[40px] bg-white rounded-4xl'>
+                                <a
+                                    href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6'
+                                    target='_blank'
+                                    className='flex justify-center items-center cursor-pointer font-secondary text-[15px] text-black w-[250px] h-[40px] bg-white rounded-4xl'>
                                     Переглянути в Google Maps
                                 </a>
                             </div>

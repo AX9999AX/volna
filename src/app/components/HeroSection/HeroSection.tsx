@@ -85,7 +85,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <Image
-                    src={'/bg/bg-mobile.webp'}
+                    src={'/bg/bg-hero-mobile.jpg'}
                     alt='ЖК Волна'
                     width={600}
                     height={600}

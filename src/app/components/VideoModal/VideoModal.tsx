@@ -1,11 +1,12 @@
 'use client'
 
 import Image from 'next/image'
-import { ImageModalProps } from './ImageModal.type'
-import { motion, AnimatePresence } from 'framer-motion'
 
-const ImageModal: React.FC<ImageModalProps> = (props: ImageModalProps) => {
-    const { src, alt, isOpen, setIsOpen } = props
+import { motion, AnimatePresence } from 'framer-motion'
+import { VideoModalProps } from './VideoModal.type'
+
+const VideoModal: React.FC<VideoModalProps> = (props: VideoModalProps) => {
+    const { isOpen, setIsOpen } = props
 
     return (
         <AnimatePresence>
@@ -15,19 +16,18 @@ const ImageModal: React.FC<ImageModalProps> = (props: ImageModalProps) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    onClick={() => setIsOpen(false)}>
+                    transition={{ duration: 0.3 }}>
                     <motion.div
                         className='relative w-full h-full flex justify-center items-center'
                         initial={{ scale: 0.8, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0.8, opacity: 0 }}
                         transition={{ duration: 0.3 }}>
-                        <Image
-                            src={src}
-                            alt={alt}
-                            layout='fill'
-                            objectFit='contain'
+                        <iframe
+                            src='https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&dnt=1'
+                            className='absolute top-0 left-0 w-full h-full'
+                            allow='autoplay;'
+                            allowFullScreen
                         />
                     </motion.div>
                     <button
@@ -47,4 +47,4 @@ const ImageModal: React.FC<ImageModalProps> = (props: ImageModalProps) => {
     )
 }
 
-export default ImageModal
+export default VideoModal

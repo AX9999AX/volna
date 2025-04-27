@@ -4,10 +4,13 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { IMegaGallery } from './MegaGallery.type'
+import ImageModal from '../ImageModal/ImageModal'
 
 const Interior = (props: IMegaGallery) => {
     const { isInView } = props
     const [isViewMore, setIsViewMore] = useState<boolean>(false)
+    const [currentImage, setCurrentImage] = useState<string>('')
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
 
     return (
         <>
@@ -16,7 +19,11 @@ const Interior = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] md:min-h-0 rounded-[20px]'>
+                    className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] md:min-h-0 rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/interior-1.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/interior-1.jpg'}
@@ -29,7 +36,11 @@ const Interior = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/interior-2.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/interior-2.jpg'}
@@ -42,7 +53,11 @@ const Interior = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/interior-3.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/interior-3.jpg'}
@@ -55,7 +70,11 @@ const Interior = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/interior-4.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/interior-4.jpg'}
@@ -68,7 +87,11 @@ const Interior = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/interior-5.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/interior-5.jpg'}
@@ -81,7 +104,11 @@ const Interior = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/interior-6.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/interior-6.jpg'}
@@ -96,7 +123,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-7.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-7.jpg'}
@@ -109,7 +140,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-8.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-8.jpg'}
@@ -122,7 +157,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-9.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-9.jpg'}
@@ -135,7 +174,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-10.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-10.jpg'}
@@ -148,7 +191,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-11.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-11.jpg'}
@@ -161,7 +208,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-12.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-12.jpg'}
@@ -174,7 +225,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-13.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-13.jpg'}
@@ -187,7 +242,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-14.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-14.jpg'}
@@ -200,7 +259,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-15.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-15.jpg'}
@@ -213,7 +276,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-16.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-16.jpg'}
@@ -226,7 +293,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-17.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-17.jpg'}
@@ -239,7 +310,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-18.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-18.jpg'}
@@ -252,7 +327,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-19.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-19.jpg'}
@@ -265,7 +344,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-20.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-20.jpg'}
@@ -278,7 +361,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-21.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-21.jpg'}
@@ -291,7 +378,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-22.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-22.jpg'}
@@ -304,7 +395,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-23.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-23.jpg'}
@@ -317,7 +412,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-24.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-24.jpg'}
@@ -330,7 +429,11 @@ const Interior = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/interior-25.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-25.jpg'}
@@ -353,6 +456,12 @@ const Interior = (props: IMegaGallery) => {
                     </motion.button>
                 </div>
             )}
+            <ImageModal
+                src={currentImage}
+                alt={'ЖК Волна'}
+                isOpen={isModalOpen}
+                setIsOpen={setIsModalOpen}
+            />
         </>
     )
 }

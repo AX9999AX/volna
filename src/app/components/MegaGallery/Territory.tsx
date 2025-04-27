@@ -5,10 +5,15 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { IMegaGallery } from './MegaGallery.type'
 import { Loader } from 'lucide-react'
+import ImageModal from '../ImageModal/ImageModal'
+import VideoModal from '../VideoModal/VideoModal'
 
 const Territory = (props: IMegaGallery) => {
     const { isInView } = props
     const [isViewMore, setIsViewMore] = useState<boolean>(false)
+    const [currentImage, setCurrentImage] = useState<string>('')
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
+    const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false)
 
     return (
         <>
@@ -17,7 +22,11 @@ const Territory = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] md:min-h-0 rounded-[20px]'>
+                    className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] md:min-h-0 rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/mega-gallery-territory-1.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/mega-gallery-territory-1.jpg'}
@@ -39,12 +48,19 @@ const Territory = (props: IMegaGallery) => {
                             />
                         </div>
                         {isInView && (
-                            <iframe
-                                src='https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&background=1&autoplay=1&muted=1&loop=1&dnt=1'
-                                className='absolute top-0 left-0 w-full h-full'
-                                allow='autoplay;'
-                                allowFullScreen
-                            />
+                            <>
+                                <div
+                                    className='cursor-pointer inset-0 w-full h-full absolute z-50'
+                                    onClick={() => setIsVideoOpen(true)}
+                                />
+                                <iframe
+                                    src='https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&background=1&autoplay=1&muted=1&loop=1&dnt=1'
+                                    className='absolute top-0 left-0 w-full h-full'
+                                    allow='autoplay;'
+                                    allowFullScreen
+                                    onClick={() => setIsVideoOpen(true)}
+                                />
+                            </>
                         )}
                     </motion.div>
                 </div>
@@ -52,7 +68,11 @@ const Territory = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/mega-gallery-territory-2.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/mega-gallery-territory-2.jpg'}
@@ -65,7 +85,11 @@ const Territory = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/mega-gallery-territory-3.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/mega-gallery-territory-3.jpg'}
@@ -78,7 +102,11 @@ const Territory = (props: IMegaGallery) => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                    className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                    onClick={() => {
+                        setCurrentImage('/mega-gallery/mega-gallery-territory-4.jpg')
+                        setIsModalOpen(true)
+                    }}>
                     <Image
                         fill
                         src={'/mega-gallery/mega-gallery-territory-4.jpg'}
@@ -93,7 +121,11 @@ const Territory = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/mega-gallery-territory-5.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/mega-gallery-territory-5.jpg'}
@@ -106,7 +138,11 @@ const Territory = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/mega-gallery-territory-6.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/mega-gallery-territory-6.jpg'}
@@ -119,7 +155,11 @@ const Territory = (props: IMegaGallery) => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'>
+                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
+                            onClick={() => {
+                                setCurrentImage('/mega-gallery/mega-gallery-territory-7.jpg')
+                                setIsModalOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/mega-gallery/mega-gallery-territory-7.jpg'}
@@ -142,6 +182,16 @@ const Territory = (props: IMegaGallery) => {
                     </motion.button>
                 </div>
             )}
+            <ImageModal
+                src={currentImage}
+                alt={'ЖК Волна'}
+                isOpen={isModalOpen}
+                setIsOpen={setIsModalOpen}
+            />
+            <VideoModal
+                isOpen={isVideoOpen}
+                setIsOpen={setIsVideoOpen}
+            />
         </>
     )
 }

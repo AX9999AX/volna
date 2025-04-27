@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { IMegaGallery } from './MegaGallery.type'
+import { Loader } from 'lucide-react'
 
 const Territory = (props: IMegaGallery) => {
     const { isInView } = props
@@ -31,15 +32,19 @@ const Territory = (props: IMegaGallery) => {
                         animate={isInView ? { opacity: 1, scale: 1 } : {}}
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className='relative aspect-video overflow-hidden rounded-[20px]'>
+                        <div className='flex inset-0 h-full justify-center items-center bg-gray-800 bg-opacity-50'>
+                            <Loader
+                                className='animate-spin text-[#B4EF7B]'
+                                size={40}
+                            />
+                        </div>
                         {isInView && (
-                            <>
-                                <iframe
-                                    src='https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&background=1&autoplay=1&muted=1&loop=1&dnt=1'
-                                    className='absolute top-0 left-0 w-full h-full'
-                                    allow='autoplay;'
-                                    allowFullScreen
-                                />
-                            </>
+                            <iframe
+                                src='https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&background=1&autoplay=1&muted=1&loop=1&dnt=1'
+                                className='absolute top-0 left-0 w-full h-full'
+                                allow='autoplay;'
+                                allowFullScreen
+                            />
                         )}
                     </motion.div>
                 </div>

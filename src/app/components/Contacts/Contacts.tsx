@@ -35,7 +35,7 @@ const Contacts = () => {
                             <motion.a
                                 whileHover={{ scale: 1.1 }}
                                 transition={{ type: 'spring', stiffness: 300 }}
-                                href='https://vb.me/+380674271737'
+                                href='viber://chat?number=%2B380674271737'
                                 target='_blank'
                                 className='flex justify-center items-center cursor-pointer border-2 text-[12px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4'>
                                 Viber

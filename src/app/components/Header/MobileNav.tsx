@@ -83,7 +83,7 @@ const MobileNav = () => {
                                         key={id}
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
-                                        className='cursor-pointer font-secondary text-[32px] text-black mb-8'
+                                        className='text-center cursor-pointer font-secondary text-[32px] text-black mb-8'
                                         onClick={() => scrollToSection(id)}>
                                         {label}
                                     </motion.li>

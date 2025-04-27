@@ -54,7 +54,7 @@ const Footer = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className='cursor-pointer font-secondary text-[14px] md:text-[18px] text-black mr-5 text-nowrap'
-                            onClick={() => scrollToSection('rooms')}>
+                            onClick={() => scrollToSection('appartments')}>
                             Варіанти Проживання
                         </motion.li>
                         <motion.li

@@ -37,15 +37,15 @@ const HeroSection = () => {
                     <h1 className='text-black md:text-white font-primary font-medium text-[32px] text-center md:text-left md:text-[48px] lg:text-[60px] xl:text-[80px] leading-[128%]'>
                         Сучасний простір <br /> для комфортного життя
                     </h1>
-                    <div className='flex justify-center md:hidden my-4'>
+                    <div className='flex justify-center md:hidden my-4 flex-wrap'>
                         <div
-                            className={`flex justify-center items-center font-secondary text-[12px] text-black w-[135px] h-[40px] bg-btn-active rounded-4xl mr-3`}>
+                            className={`flex justify-center items-center font-secondary text-[12px] text-black px-4 py-3 bg-btn-active rounded-4xl mr-3 mb-3`}>
                             Київ, Оскороки
                         </div>
                         <a
                             href='https://www.google.com.ua/'
                             target='_blank'
-                            className={`flex justify-center items-center cursor-pointer font-secondary text-[12px] text-black w-[250px] h-[40px] bg-btn-active rounded-4xl`}>
+                            className={`text-center flex justify-center items-center cursor-pointer font-secondary text-[12px] text-black px-4 py-3 bg-btn-active rounded-4xl mb-3`}>
                             Переглянути в Google Maps
                         </a>
                     </div>
@@ -149,7 +149,7 @@ const HeroSection = () => {
                 <div className='flex md:hidden justify-center items-center'>
                     <button
                         onClick={() => scrollToSection('contacts')}
-                        className='my-5 cursor-pointer flex font-secondary text-[15px] leading-[150%] px-5 py-3 border-2 rounded-4xl mr-3 md:mt-4 lg:mt-0 border-[#F2F2F2] bg-[#B4EF7B]'>
+                        className='my-5 cursor-pointer flex justify-center items-center font-secondary text-[12px] leading-[150%] px-5 py-3 border-2 rounded-4xl md:mt-4 lg:mt-0 border-[#F2F2F2] bg-[#B4EF7B]'>
                         Консультація по оренді
                         <Image
                             src={'/icon/arrow-up.svg'}

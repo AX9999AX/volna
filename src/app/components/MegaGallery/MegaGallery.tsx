@@ -4,6 +4,7 @@ import { useRef, useState } from 'react'
 import { MegaGalleryType } from './MegaGallery.type'
 import { motion, useInView } from 'framer-motion'
 import Territory from './Territory'
+import Interior from './Interior'
 
 const MegaGallery = () => {
     const ref = useRef(null)
@@ -27,7 +28,7 @@ const MegaGallery = () => {
             </div>
 
             <div className='flex justify-between items-center flex-wrap'>
-                <p className='w-full xl:w-[50%] font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <p className='text-center xl:text-left w-full xl:w-[50%] font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Ознайомтесь з атмосферою ЖК VOLNA через фото та відео. Побачте комплекс з висоти, інтер’єри
                     апартаментів та кімнат, місць загального користування, ландшафтний дизайн території.
                 </p>
@@ -35,7 +36,7 @@ const MegaGallery = () => {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
-                        className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] ${
+                        className={`cursor-pointer font-secondary text-[15px] text-black p-3 ${
                             galleryType === MegaGalleryType.Territory ? 'bg-btn-active' : 'bg-btn-default'
                         }  rounded-2xl`}
                         onClick={() => setGallaryType(MegaGalleryType.Territory)}>
@@ -44,7 +45,7 @@ const MegaGallery = () => {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
-                        className={`cursor-pointer font-secondary text-[15px] text-black w-[190px] h-[50px] ${
+                        className={`cursor-pointer font-secondary text-[15px] text-black p-3 ${
                             galleryType === MegaGalleryType.Interior ? 'bg-btn-active' : 'bg-btn-default'
                         }  rounded-2xl`}
                         onClick={() => setGallaryType(MegaGalleryType.Interior)}>
@@ -52,7 +53,8 @@ const MegaGallery = () => {
                     </motion.button>
                 </div>
             </div>
-            <Territory isInView={isInView} />
+            {MegaGalleryType.Territory === galleryType && <Territory isInView={isInView} />}
+            {MegaGalleryType.Interior === galleryType && <Interior isInView={isInView} />}
         </section>
     )
 }

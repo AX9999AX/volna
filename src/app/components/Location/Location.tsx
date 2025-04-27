@@ -19,7 +19,7 @@ const Location = () => {
                     </p>
                 </div>
                 <div className='grid grid-cols-2 gap-6 py-12'>
-                    <div className='col-span-2 xl:col-span-1 w-full min-h-[350px] xl:min-h-[380px] h-full rounded-2xl overflow-hidden'>
+                    <div className='col-span-2 xl:col-span-1 w-full min-h-[250px] md:min-h-[350px] xl:min-h-[380px] h-full rounded-2xl overflow-hidden'>
                         <DynamicMap />
                     </div>
                     <div className='col-span-2 xl:col-span-1'>

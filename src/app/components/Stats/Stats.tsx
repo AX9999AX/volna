@@ -5,11 +5,11 @@ import { useInView } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 
 const stats = [
-    { value: '127', label: 'Апартаментів та кімнат' },
+    { value: '127', label: 'Апартаментів' },
     { value: '254', label: 'Особи' },
     { value: '40+', label: 'Паркомісць' },
     { value: '56', label: 'Відеокамер', isHiddenOnMobile: true },
-    { value: '15', label: 'хвилин до метро' },
+    { value: '15', label: 'Хвилин до метро' },
 ]
 
 const containerVariants = {
@@ -54,7 +54,7 @@ export const Stats: React.FC = () => {
                     <div className='font-primary font-extrabold text-[48px] md:text-[75px] leading-[100%]'>
                         {stat.value}
                     </div>
-                    <div className='font-secondary text-[12px] md:text-[18px]'>{stat.label}</div>
+                    <div className='font-secondary text-[10px] md:text-[18px]'>{stat.label}</div>
                 </motion.div>
             ))}
         </motion.div>

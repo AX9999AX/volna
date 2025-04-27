@@ -4,12 +4,15 @@ import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { useRef, useState } from 'react'
 import AnimatedList from '../AnimatedList/AnimatedList'
+import ImageModal from '../ImageModal/ImageModal'
 
 const AppartmentHalfLux = () => {
     const ref = useRef(null)
     const [isViewMore, setIsViewMore] = useState<boolean>(false)
     const isInView = useInView(ref, { once: true })
     const [isOpen, setisOpen] = useState<boolean>(false)
+    const [currentImage, setCurrentImage] = useState<string>('')
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
 
     return (
         <div
@@ -44,7 +47,11 @@ const AppartmentHalfLux = () => {
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                 transition={{ duration: 0.6, delay: 0.3 }}
-                                className='relative min-h-[250px] md:min-h-[500px] m-2'>
+                                className='cursor-pointer relative min-h-[250px] md:min-h-[500px] m-2'
+                                onClick={() => {
+                                    setCurrentImage('/appartments/half-lux-1.jpg')
+                                    setIsModalOpen(true)
+                                }}>
                                 <Image
                                     fill
                                     src={'/appartments/half-lux-1.jpg'}
@@ -58,7 +65,11 @@ const AppartmentHalfLux = () => {
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                     transition={{ duration: 0.6, delay: 0.3 }}
-                                    className='hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'>
+                                    className='cursor-pointer hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'
+                                    onClick={() => {
+                                        setCurrentImage('/appartments/half-lux-2.jpg')
+                                        setIsModalOpen(true)
+                                    }}>
                                     <Image
                                         fill
                                         src={'/appartments/half-lux-2.jpg'}
@@ -71,7 +82,11 @@ const AppartmentHalfLux = () => {
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                     transition={{ duration: 0.6, delay: 0.3 }}
-                                    className='hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'>
+                                    className='cursor-pointer hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'
+                                    onClick={() => {
+                                        setCurrentImage('/appartments/half-lux-3.jpg')
+                                        setIsModalOpen(true)
+                                    }}>
                                     <Image
                                         fill
                                         src={'/appartments/half-lux-3.jpg'}
@@ -86,7 +101,11 @@ const AppartmentHalfLux = () => {
                                             initial={{ opacity: 0, scale: 0.95 }}
                                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                             transition={{ duration: 0.6, delay: 0.3 }}
-                                            className='block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'>
+                                            className='cursor-pointer block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'
+                                            onClick={() => {
+                                                setCurrentImage('/appartments/half-lux-2.jpg')
+                                                setIsModalOpen(true)
+                                            }}>
                                             <Image
                                                 fill
                                                 src={'/appartments/half-lux-2.jpg'}
@@ -99,7 +118,11 @@ const AppartmentHalfLux = () => {
                                             initial={{ opacity: 0, scale: 0.95 }}
                                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                             transition={{ duration: 0.6, delay: 0.3 }}
-                                            className='block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'>
+                                            className='cursor-pointer block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'
+                                            onClick={() => {
+                                                setCurrentImage('/appartments/half-lux-3.jpg')
+                                                setIsModalOpen(true)
+                                            }}>
                                             <Image
                                                 fill
                                                 src={'/appartments/half-lux-3.jpg'}
@@ -112,7 +135,11 @@ const AppartmentHalfLux = () => {
                                             initial={{ opacity: 0, scale: 0.95 }}
                                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                             transition={{ duration: 0.6, delay: 0.3 }}
-                                            className='relative min-h-[250px] md:min-h-[300px] m-2'>
+                                            className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
+                                            onClick={() => {
+                                                setCurrentImage('/appartments/half-lux-5.jpg')
+                                                setIsModalOpen(true)
+                                            }}>
                                             <Image
                                                 fill
                                                 src={'/appartments/half-lux-5.jpg'}
@@ -125,7 +152,11 @@ const AppartmentHalfLux = () => {
                                             initial={{ opacity: 0, scale: 0.95 }}
                                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                             transition={{ duration: 0.6, delay: 0.3 }}
-                                            className='relative min-h-[250px] md:min-h-[300px] m-2'>
+                                            className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
+                                            onClick={() => {
+                                                setCurrentImage('/appartments/half-lux-6.jpg')
+                                                setIsModalOpen(true)
+                                            }}>
                                             <Image
                                                 fill
                                                 src={'/appartments/half-lux-6.jpg'}
@@ -138,7 +169,11 @@ const AppartmentHalfLux = () => {
                                             initial={{ opacity: 0, scale: 0.95 }}
                                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                             transition={{ duration: 0.6, delay: 0.3 }}
-                                            className='relative min-h-[250px] md:min-h-[300px] m-2'>
+                                            className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
+                                            onClick={() => {
+                                                setCurrentImage('/appartments/half-lux-7.jpg')
+                                                setIsModalOpen(true)
+                                            }}>
                                             <Image
                                                 fill
                                                 src={'/appartments/half-lux-7.jpg'}
@@ -151,7 +186,11 @@ const AppartmentHalfLux = () => {
                                             initial={{ opacity: 0, scale: 0.95 }}
                                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                             transition={{ duration: 0.6, delay: 0.3 }}
-                                            className='relative min-h-[250px] md:min-h-[300px] m-2'>
+                                            className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
+                                            onClick={() => {
+                                                setCurrentImage('/appartments/half-lux-8.jpg')
+                                                setIsModalOpen(true)
+                                            }}>
                                             <Image
                                                 fill
                                                 src={'/appartments/half-lux-8.jpg'}
@@ -249,6 +288,12 @@ const AppartmentHalfLux = () => {
                     </div>
                 </>
             )}
+            <ImageModal
+                src={currentImage}
+                alt={'ЖК Волна'}
+                isOpen={isModalOpen}
+                setIsOpen={setIsModalOpen}
+            />
         </div>
     )
 }

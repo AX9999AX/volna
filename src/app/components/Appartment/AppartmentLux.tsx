@@ -4,11 +4,14 @@ import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { useRef, useState } from 'react'
 import AnimatedList from '../AnimatedList/AnimatedList'
+import ImageModal from '../ImageModal/ImageModal'
 
 const AppartmentLux = () => {
     const ref = useRef(null)
     const [isViewMore, setIsViewMore] = useState<boolean>(false)
     const isInView = useInView(ref, { once: true })
+    const [currentImage, setCurrentImage] = useState<string>('')
+    const [isOpen, setIsOpen] = useState<boolean>(false)
 
     return (
         <div className='p-2 md:p-5 border-2 border-[#B4EF7B] rounded-[33px]'>
@@ -29,7 +32,11 @@ const AppartmentLux = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={isInView ? { opacity: 1, scale: 1 } : {}}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className='relative min-h-[250px] md:min-h-[500px] m-2'>
+                        className='cursor-pointer relative min-h-[250px] md:min-h-[500px] m-2'
+                        onClick={() => {
+                            setCurrentImage('/appartments/lux-1.jpg')
+                            setIsOpen(true)
+                        }}>
                         <Image
                             fill
                             src={'/appartments/lux-1.jpg'}
@@ -43,7 +50,11 @@ const AppartmentLux = () => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'>
+                            className='cursor-pointer hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'
+                            onClick={() => {
+                                setCurrentImage('/appartments/lux-2.jpg')
+                                setIsOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/appartments/lux-2.jpg'}
@@ -56,7 +67,11 @@ const AppartmentLux = () => {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.6, delay: 0.3 }}
-                            className='hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'>
+                            className='cursor-pointer hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'
+                            onClick={() => {
+                                setCurrentImage('/appartments/lux-3.jpg')
+                                setIsOpen(true)
+                            }}>
                             <Image
                                 fill
                                 src={'/appartments/lux-3.jpg'}
@@ -71,7 +86,11 @@ const AppartmentLux = () => {
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                     transition={{ duration: 0.6, delay: 0.3 }}
-                                    className='block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'>
+                                    className='cursor-pointer block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'
+                                    onClick={() => {
+                                        setCurrentImage('/appartments/lux-2.jpg')
+                                        setIsOpen(true)
+                                    }}>
                                     <Image
                                         fill
                                         src={'/appartments/lux-2.jpg'}
@@ -84,7 +103,11 @@ const AppartmentLux = () => {
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                     transition={{ duration: 0.6, delay: 0.3 }}
-                                    className='block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'>
+                                    className='cursor-pointer block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'
+                                    onClick={() => {
+                                        setCurrentImage('/appartments/lux-3.jpg')
+                                        setIsOpen(true)
+                                    }}>
                                     <Image
                                         fill
                                         src={'/appartments/lux-3.jpg'}
@@ -97,7 +120,11 @@ const AppartmentLux = () => {
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                     transition={{ duration: 0.6, delay: 0.3 }}
-                                    className='relative min-h-[250px] md:min-h-[300px] m-2'>
+                                    className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
+                                    onClick={() => {
+                                        setCurrentImage('/appartments/lux-4.jpg')
+                                        setIsOpen(true)
+                                    }}>
                                     <Image
                                         fill
                                         src={'/appartments/lux-4.jpg'}
@@ -110,7 +137,11 @@ const AppartmentLux = () => {
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                     transition={{ duration: 0.6, delay: 0.3 }}
-                                    className='relative min-h-[250px] md:min-h-[300px] m-2'>
+                                    className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
+                                    onClick={() => {
+                                        setCurrentImage('/appartments/lux-5.jpg')
+                                        setIsOpen(true)
+                                    }}>
                                     <Image
                                         fill
                                         src={'/appartments/lux-5.jpg'}
@@ -123,7 +154,11 @@ const AppartmentLux = () => {
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                     transition={{ duration: 0.6, delay: 0.3 }}
-                                    className='relative min-h-[250px] md:min-h-[300px] m-2'>
+                                    className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
+                                    onClick={() => {
+                                        setCurrentImage('/appartments/lux-6.jpg')
+                                        setIsOpen(true)
+                                    }}>
                                     <Image
                                         fill
                                         src={'/appartments/lux-6.jpg'}
@@ -219,6 +254,12 @@ const AppartmentLux = () => {
                     <span className='font-secondary text-[12px] text-[#18181B]'>/місяць</span>
                 </div>
             </div>
+            <ImageModal
+                src={currentImage}
+                alt={'ЖК Волна'}
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+            />
         </div>
     )
 }

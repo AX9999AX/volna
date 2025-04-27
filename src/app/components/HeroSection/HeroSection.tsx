@@ -86,14 +86,11 @@ const HeroSection = () => {
                 </div>
                 <div className='flex md:hidden justify-center items-center my-4'>
                     <Image
-                        src={'/bg/bg-mobile.jpg'}
-                        alt='bg'
-                        width={327}
-                        height={218}
+                        src={'/bg/bg-mobile.webp'}
+                        alt='ЖК Волна'
+                        width={250}
+                        height={172}
                         className='rounded-2xl'
-                        priority
-                        quality={50}
-                        loading='eager'
                     />
                 </div>
                 <div className='bg-[#F2F4F7] md:bg-white rounded-3xl p-5 mt-5'>

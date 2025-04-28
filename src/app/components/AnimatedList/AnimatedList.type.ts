@@ -13,4 +13,5 @@ export interface IAnimatedList {
     isTextLeftMd?: boolean
     isPadding?: boolean
     isMargin?: boolean
+    isTickVisableMobile?: boolean
 }

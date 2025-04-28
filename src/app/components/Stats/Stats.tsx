@@ -51,10 +51,10 @@ export const Stats: React.FC = () => {
                         stat?.isHiddenOnMobile ? 'hidden xl:flex' : ''
                     }  w-[calc(50%-24px)] xl:w-[calc(20%-24px)]`}
                     variants={itemVariants}>
-                    <div className='font-primary font-extrabold text-[48px] md:text-[75px] leading-[100%]'>
+                    <div className='font-primary font-extrabold text-[40px] md:text-[75px] leading-[100%]'>
                         {stat.value}
                     </div>
-                    <div className='font-secondary text-[10px] md:text-[18px]'>{stat.label}</div>
+                    <div className='font-secondary text-[14px] md:text-[18px]'>{stat.label}</div>
                 </motion.div>
             ))}
         </motion.div>

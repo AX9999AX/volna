@@ -20,7 +20,7 @@ const itemVariants = {
 }
 
 const AnimatedList: React.FC<IAnimatedList> = (props: IAnimatedList) => {
-    const { items, bgColorMd, isTextLeftMd, isPadding, isMargin } = props
+    const { items, bgColorMd, isTextLeftMd, isPadding, isMargin, isTickVisableMobile } = props
 
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
@@ -48,13 +48,16 @@ const AnimatedList: React.FC<IAnimatedList> = (props: IAnimatedList) => {
                     className={marginClass}
                     variants={itemVariants}>
                     <div className='flex items-start'>
-                        <div className='hidden md:block mr-4 min-w-[20px] min-h-[20px] max-w-[20px] max-h-[20px]'>
+                        <div
+                            className={`${
+                                isTickVisableMobile ? 'block' : 'hidden md:block'
+                            }hidden md:block mr-4 min-w-[16px] min-h-[16px] max-w-[16px] max-h-[16px]  md:min-w-[20px] md:min-h-[20px] md:max-w-[20px] md:max-h-[20px]`}>
                             <Image
                                 src='/icon/icon-tick.svg'
                                 alt='Tick'
                                 width={20}
                                 height={20}
-                                className='w-[20px] h-[20px]'
+                                className='w-[16px] h-[16px] md:w-[20px] md:h-[20px]'
                             />
                         </div>
                         <div className='flex flex-col w-full'>

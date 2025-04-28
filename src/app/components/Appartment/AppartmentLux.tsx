@@ -187,7 +187,7 @@ const AppartmentLux = () => {
                         В «Комфортній» частини ЖК «VOLNA», зі своєю окремою рецепцією, розташовано 69 двомісних
                         апартаментів категорії «люкс» та «напівлюкс»
                     </p>
-                    <p className='text-center md:text-left font-secondary text-[14px] md:text-[20px] font-bold'>
+                    <p className='text-center md:text-left font-secondary text-[15px] md:text-[20px] font-bold'>
                         Облаштований:
                     </p>
                     <AnimatedList
@@ -245,6 +245,7 @@ const AppartmentLux = () => {
                         isTextLeftMd={true}
                         isPadding={true}
                         isMargin={true}
+                        isTickVisableMobile={true}
                     />
                 </div>
             </div>

@@ -35,7 +35,7 @@ const About = () => {
                     />
                 </div>
                 <div className='col-span-2 xl:col-span-1 grid grid-cols-1 gap-6'>
-                    <p className='text-center md:text-left font-secondary text-[18px] leading-[150%] text-[#4E4E4E]'>
+                    <p className='text-center md:text-left font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                         Житловий комплекс «VOLNA»,
                         <strong>створений з думкою про комфорт та безпеку мешканців</strong>, розташований у тихому
                         затишному районі Києва, на Осокорках.

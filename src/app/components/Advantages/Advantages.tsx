@@ -20,7 +20,7 @@ const Advantages = () => {
                         <h3 className='font-primary font-medium text-[20px] md:text-[26px] leading-[128%] text-center mb-3'>
                             Сервісна служба
                         </h3>
-                        <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E] text-center'>
+                        <p className='font-secondary  text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E] text-center'>
                             На території ЖК працює сервісні служба, яка надає послуги з прання речей та прибирання
                             кімнат та апартаментів
                         </p>
@@ -35,10 +35,10 @@ const Advantages = () => {
                                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                             />
                         </div>
-                        <h3 className='font-primary font-medium text-[26px] leading-[128%] text-center my-3'>
+                        <h3 className='font-primary font-medium text-[20px] md:text-[26px] leading-[128%] text-center my-3 px-2'>
                             Парковка на 40+ автомобілів
                         </h3>
-                        <p className='font-secondary text-[18px] leading-[150%] text-[#4E4E4E] px-3 text-center mb-6 md:mb-0'>
+                        <p className='font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E] px-3 text-center mb-6 md:mb-0'>
                             Для зручності мешканців передбачено паркомісця на 40 автомобілів.
                         </p>
                     </div>

@@ -54,7 +54,7 @@ export const Stats: React.FC = () => {
                     <div className='font-primary font-extrabold text-[40px] md:text-[75px] leading-[100%]'>
                         {stat.value}
                     </div>
-                    <div className='font-secondary text-[14px] md:text-[18px]'>{stat.label}</div>
+                    <div className='font-secondary text-[15px] md:text-[18px]'>{stat.label}</div>
                 </motion.div>
             ))}
         </motion.div>

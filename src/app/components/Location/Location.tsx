@@ -26,11 +26,11 @@ const Location = () => {
                         <h2 className='hidden xl:block text-center xl:text-left font-primary font-medium text-[24px] md:text-[40px] xl:text-[42px] my-6'>
                             Локація та інфраструктура
                         </h2>
-                        <p className='text-center xl:text-left font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                        <p className='text-center xl:text-left font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                             ЖК VOLNA розташований у зручному та спокійному районі, де все необхідне — поруч. У
                             безпосередній близькості знаходяться магазини, школи, дитячі садки, аптеки та сервіси.
                         </p>
-                        <p className='text-center xl:text-left font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E] mt-4'>
+                        <p className='text-center xl:text-left font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E] mt-4'>
                             <strong>Зручна транспортна розв’язка</strong> дозволяє швидко дістатися в будь-яку частину
                             міста, як на авто, так і громадським транспортом.
                         </p>

@@ -28,7 +28,7 @@ const MegaGallery = () => {
             </div>
 
             <div className='flex justify-between items-center flex-wrap'>
-                <p className='text-center xl:text-left w-full xl:w-[50%] font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <p className='text-center xl:text-left w-full xl:w-[50%] font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Ознайомтесь з атмосферою ЖК VOLNA через фото та відео. Побачте комплекс з висоти, інтер’єри
                     апартаментів та кімнат, місць загального користування, ландшафтний дизайн території.
                 </p>

@@ -43,7 +43,7 @@ const HeroSection = () => {
                             Київ, Оскороки
                         </div>
                         <a
-                            href='https://www.google.com.ua/'
+                            href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6'
                             target='_blank'
                             className={`text-center flex justify-center items-center cursor-pointer font-secondary text-[12px] text-black px-4 py-3 bg-btn-active rounded-4xl mb-3`}>
                             Переглянути в Google Maps
@@ -68,7 +68,7 @@ const HeroSection = () => {
                         />
                     </motion.button>
                     <div className='flex justify-between items-center'>
-                        <p className='block 2xl:hidden mt-3 font-secondary text-[14px] md:text-[18px] text-center md:text-left text-[#4E4E4E] md:text-white leading-[150%] w-full md:max-w-[400px] lg:max-w-[600px]'>
+                        <p className='block 2xl:hidden mt-0 md:mt-3 font-secondary text-[15px] md:text-[18px] text-center md:text-left text-[#4E4E4E] md:text-white leading-[150%] w-full md:max-w-[400px] lg:max-w-[600px]'>
                             Житловий комплекс «Volna» - сучасний комплекс для комфортного проживання в Києві, на
                             закритій території з охороною, на березі Дніпра.
                         </p>

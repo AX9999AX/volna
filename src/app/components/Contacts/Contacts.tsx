@@ -23,7 +23,7 @@ const Contacts = () => {
                     <p className='hidden md:block font-secondary text-[18px] text-[#4E4E4E] leading-[150%]'>
                         Ми завжди на зв’ язку та готові відповісти на ваші питання.
                     </p>
-                    <p className='block md:hidden text-center font-secondary text-[14px] text-[#4E4E4E] leading-[150%]'>
+                    <p className='block md:hidden text-center font-secondary text-[15px] text-[#4E4E4E] leading-[150%]'>
                         З усіх питань, стосовно проживання в ЖК, звертайтесь до адміністратора. Ми завжди на зв’ язку та
                         готові відповісти на ваші питання.
                     </p>

@@ -69,7 +69,7 @@ const AnimatedList: React.FC<IAnimatedList> = (props: IAnimatedList) => {
                             </p>
 
                             {item.sublist && item.sublist.length > 0 && (
-                                <ul className='marker:text-[#B4EF7B] font-secondary ml-6 list-disc text-left text-[14px] md:text-[16px] text-[#4E4E4E]'>
+                                <ul className='marker:text-[#B4EF7B] font-secondary ml-6 list-disc text-left text-[15px] md:text-[16px] text-[#4E4E4E]'>
                                     {item.sublist.map((subItem, subIndex) => (
                                         <li key={subIndex}>{subItem}</li>
                                     ))}

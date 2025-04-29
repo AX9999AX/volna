@@ -14,11 +14,11 @@ const Location = () => {
                     <h2 className='w-full xl:w-auto text-center xl:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
                         Локація та інфраструктура
                     </h2>
-                    <p className='w-full xl:w-auto text-center xl:text-left font-secondary font-normal text-[12px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                    <p className='w-full xl:w-auto text-center xl:text-left font-secondary font-normal text-[13px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                         Усе, що потрібно для сучасного життя
                     </p>
                 </div>
-                <div className='grid grid-cols-2 gap-6 py-12'>
+                <div className='grid grid-cols-2 gap-6 py-4 md:py-12'>
                     <div className='col-span-2 xl:col-span-1 w-full min-h-[250px] md:min-h-[350px] xl:min-h-[380px] h-full rounded-2xl overflow-hidden'>
                         <DynamicMap />
                     </div>
@@ -26,7 +26,7 @@ const Location = () => {
                         <h2 className='hidden xl:block text-center xl:text-left font-primary font-medium text-[24px] md:text-[40px] xl:text-[42px] my-6'>
                             Локація та інфраструктура
                         </h2>
-                        <p className='text-center xl:text-left font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                        <p className='hidden md:block text-center xl:text-left font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                             ЖК VOLNA розташований у зручному та спокійному районі, де все необхідне — поруч. У
                             безпосередній близькості знаходяться магазини, школи, дитячі садки, аптеки та сервіси.
                         </p>

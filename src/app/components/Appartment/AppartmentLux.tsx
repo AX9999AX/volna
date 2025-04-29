@@ -16,7 +16,7 @@ const AppartmentLux = () => {
     return (
         <div className='p-2 md:p-5 border-2 border-[#B4EF7B] rounded-[33px]'>
             <div className='flex justify-between items-center my-6'>
-                <h3 className='w-full md:w-auto text-center md:text-left font-secondary font-bold text-[20px] lg:text-[32px] leading-[115%]'>
+                <h3 className='w-full md:w-auto text-center md:text-left font-secondary font-normal md:font-bold text-[20px] lg:text-[32px] leading-[115%]'>
                     Апартаменти категорії «Люкс»
                 </h3>
                 <div className='hidden md:block bg-[#B4EF7B] px-6 py-2 rounded-2xl'>

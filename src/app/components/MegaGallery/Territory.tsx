@@ -54,7 +54,7 @@ const Territory = (props: IMegaGallery) => {
                                     onClick={() => setIsVideoOpen(true)}
                                 />
                                 <iframe
-                                    src='https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&background=1&autoplay=1&muted=1&loop=1&dnt=1'
+                                    src='https://player.vimeo.com/video/1079855371?h=43272a3d81&background=1&autoplay=1&muted=1&loop=1&dnt=1'
                                     className='absolute top-0 left-0 w-full h-full'
                                     allow='autoplay;'
                                     allowFullScreen

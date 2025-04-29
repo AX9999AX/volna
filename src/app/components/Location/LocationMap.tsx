@@ -37,7 +37,7 @@ const ZoomScaler = () => {
 }
 
 const LocationMap = () => {
-    const position: [number, number] = [50.3401905, 30.6180144]
+    const position: [number, number] = [50.34006, 30.61806]
 
     return (
         <div className='w-full h-full rounded-2xl overflow-hidden'>

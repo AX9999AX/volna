@@ -30,14 +30,14 @@ const Footer = () => {
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
                         href='mailto:volna.residence@gmail.com'
-                        className='mr-1 md:mr-5 mb-2 2xl:mb-0 bg-white p-3 rounded-2xl font-secondary text-[12px] md:text-[15px]'>
+                        className='mr-1 md:mr-5 mb-2 2xl:mb-0 bg-white p-3 rounded-2xl font-secondary text-[14px] md:text-[15px]'>
                         volna.residence@gmail.com
                     </motion.a>
                     <motion.a
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
                         href='tel:+380674271737'
-                        className='bg-white mb-2 xl:mb-0 p-3 rounded-2xl font-secondary text-[12px] md:text-[15px]'>
+                        className='bg-white mb-2 xl:mb-0 p-3 rounded-2xl font-secondary text-[14px] md:text-[15px]'>
                         +380 (67) 427-17-37
                     </motion.a>
                 </div>

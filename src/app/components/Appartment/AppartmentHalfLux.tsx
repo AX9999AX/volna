@@ -24,7 +24,7 @@ const AppartmentHalfLux = () => {
                     isOpen ? 'my-6' : 'my-6 xl:my-0'
                 }`}>
                 <h3
-                    className={`mb-3 xl:mb-0 w-full md:w-auto text-center md:text-left font-secondary font-bold text-[20px] ${
+                    className={`mb-3 xl:mb-0 w-full md:w-auto text-center md:text-left font-secondary font-normal md:font-bold text-[20px] ${
                         !isOpen ? 'xl:tex-[28px] 2xl:text-[32px]' : 'lg:text-[32px]'
                     } leading-[115%]`}>
                     Апартаменти категорії «Напівлюкс»
@@ -188,12 +188,12 @@ const AppartmentHalfLux = () => {
                                             transition={{ duration: 0.6, delay: 0.3 }}
                                             className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
                                             onClick={() => {
-                                                setCurrentImage('/appartments/half-lux-8.jpg')
+                                                setCurrentImage('/appartments/appartment-half-lux-9.jpg')
                                                 setIsModalOpen(true)
                                             }}>
                                             <Image
                                                 fill
-                                                src={'/appartments/half-lux-8.jpg'}
+                                                src={'/appartments/appartment-half-lux-9.jpg'}
                                                 alt={'Alt'}
                                                 className='object-cover rounded-[25px]'
                                                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'

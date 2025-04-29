@@ -24,7 +24,7 @@ const VideoModal: React.FC<VideoModalProps> = (props: VideoModalProps) => {
                         exit={{ scale: 0.8, opacity: 0 }}
                         transition={{ duration: 0.3 }}>
                         <iframe
-                            src='https://player.vimeo.com/video/1078809818?h=5b8b6e65ca&dnt=1'
+                            src='https://player.vimeo.com/video/1079855371?h=43272a3d81&dnt=1'
                             className='absolute top-0 left-0 w-full h-full'
                             allow='autoplay;'
                             allowFullScreen

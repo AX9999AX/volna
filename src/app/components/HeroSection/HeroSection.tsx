@@ -16,7 +16,7 @@ const HeroSection = () => {
     }
 
     return (
-        <section className="w-full bg-none md:bg-[url('/bg/bg-hero.avif')] bg-cover bg-center h-auto md:h-[980px]">
+        <section className="w-full bg-none md:bg-[url('/bg/bg-hero-new.jpg')] bg-cover bg-center h-auto md:h-[980px]">
             <Header />
             <div className='container mx-auto px-8 mt-6 md:mt-32 2xl:mt-48'>
                 <div className='hidden md:flex mb-3 flex-wrap'>
@@ -39,13 +39,13 @@ const HeroSection = () => {
                     </h1>
                     <div className='flex justify-center md:hidden my-4 flex-wrap'>
                         <div
-                            className={`flex justify-center items-center font-secondary text-[12px] text-black px-4 py-3 bg-btn-active rounded-4xl mr-3 mb-3`}>
+                            className={`flex justify-center items-center font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl mr-3 mb-3`}>
                             Київ, Оскороки
                         </div>
                         <a
                             href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6'
                             target='_blank'
-                            className={`text-center flex justify-center items-center cursor-pointer font-secondary text-[12px] text-black px-4 py-3 bg-btn-active rounded-4xl mb-3`}>
+                            className={`text-center flex justify-center items-center cursor-pointer font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl mb-3`}>
                             Переглянути в Google Maps
                         </a>
                     </div>
@@ -94,23 +94,20 @@ const HeroSection = () => {
                 />
                 <div className='bg-[#F2F4F7] md:bg-white rounded-3xl p-5 mt-5'>
                     <h2 className='text-black text-center md:text-left font-primary font-medium text-[16px] md:text-[32px] leading-[128%] mb-5'>
-                        Чому краще жити саме в нас
+                        Чому краще жити саме в нас:
                     </h2>
                     <div className='flex justify-center md:justify-start 2xl:justify-between items-center flex-wrap'>
-                        <div className='text-center font-secondary text-[12px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                        <div className='text-center font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
                             Варіанти проживання на різний «гаманець»
                         </div>
-                        <div className='font-secondary text-[12px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                        <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
                             Власна автостоянка на 40 авто
                         </div>
-                        <div className='font-secondary text-[12px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
-                            Закрита територія
+                        <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                            Закрита затишна територія
                         </div>
-                        <div className='font-secondary text-[12px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                        <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
                             Цілодобова охорона
-                        </div>
-                        <div className='font-secondary text-[12px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
-                            Затишна територія
                         </div>
                     </div>
                     <div className='hidden md:flex justify-between items-center my-6 flex-wrap'>
@@ -145,7 +142,7 @@ const HeroSection = () => {
                 <div className='flex md:hidden justify-center items-center'>
                     <button
                         onClick={() => scrollToSection('contacts')}
-                        className='my-5 cursor-pointer flex justify-center items-center font-secondary text-[12px] leading-[150%] px-5 py-3 border-2 rounded-4xl md:mt-4 lg:mt-0 border-[#F2F2F2] bg-[#B4EF7B]'>
+                        className='my-5 cursor-pointer flex justify-center items-center font-secondary text-[14px] leading-[150%] px-5 py-3 border-2 rounded-4xl md:mt-4 lg:mt-0 border-[#F2F2F2] bg-[#B4EF7B]'>
                         Консультація по оренді
                         <Image
                             src={'/icon/arrow-up.svg'}

@@ -20,19 +20,17 @@ const About = () => {
         <section
             id='about'
             className='container mx-auto px-8'>
-            <div className='flex justify-between items-center flex-wrap mt-8 md:mt-20 mb-10'>
+            <div className='flex justify-between items-center flex-wrap mt-8 md:mt-20 mb-4 md:mb-10'>
                 <h2 className='w-full md:w-auto text-center md:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
                     Про Житловий Комплекс
                 </h2>
-                <p className='w-full md:w-auto text-center md:text-left font-secondary font-normal text-[12px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <p className='w-full md:w-auto text-center md:text-left font-secondary font-normal text-[13px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Продуманий простір для щоденного комфорту
                 </p>
             </div>
             <div className='grid grid-cols-2 gap-6'>
                 <div className='col-span-2 xl:col-span-1'>
-                    <Gallery
-                        images={['/gallery/gallery-1.avif', '/gallery/gallery-2.avif', '/gallery/gallery-3.avif']}
-                    />
+                    <Gallery images={['/gallery/about-1.jpg', '/gallery/about-2.jpg', '/gallery/about-3.jpg']} />
                 </div>
                 <div className='col-span-2 xl:col-span-1 grid grid-cols-1 gap-6'>
                     <p className='text-center md:text-left font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
@@ -101,13 +99,13 @@ const About = () => {
                 </div>
             </div>
             <Stats />
-            <div className='grid grid-cols-2 gap-6 mt-12'>
+            <div className='grid grid-cols-2 gap-6 mt-6 md:mt-12'>
                 <p className='text-center md:text-left col-span-2 md:col-span-1 font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Тут <strong>кожна деталь продумана до дрібниць</strong> - від облаштування апартаментів та кімнат до
                     озеленення і ландшафтного дизайну території, що створює <strong>приємне середовище</strong>, де
                     хочеться жити, працювати і відпочивати.
                 </p>
-                <p className='text-center md:text-left col-span-2 md:col-span-1 font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
+                <p className='hidden md:block text-center md:text-left col-span-2 md:col-span-1 font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
                     Комплекс має закриту територію з охороною 24/7 , власну автостоянку, автономну інженерну
                     інфраструктуру, включно з власною артезіанською свердловиною для водопостачання
                 </p>

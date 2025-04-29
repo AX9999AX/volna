@@ -38,22 +38,22 @@ const HeroSection = () => {
                         Сучасний простір <br /> для комфортного життя
                     </h1>
                     <Image
-                        src={'/bg/bg-hero-mobile.jpg'}
+                        src={'/bg/bg-mobile-new.jpg'}
                         alt='ЖК Волна'
                         width={600}
                         height={600}
                         className='block my-4 md:hidden rounded-2xl'
                         priority
                     />
-                    <div className='flex justify-center md:hidden my-4 flex-wrap'>
+                    <div className='flex gap-3 justify-center md:hidden my-4 flex-wrap'>
                         <div
-                            className={`flex justify-center items-center font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl mr-3 mb-3`}>
+                            className={`flex justify-center items-center font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl `}>
                             Київ, Оскороки
                         </div>
                         <a
                             href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6'
                             target='_blank'
-                            className={`text-center flex justify-center items-center cursor-pointer font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl mb-3`}>
+                            className={`text-center flex justify-center items-center cursor-pointer font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl `}>
                             Переглянути в Google Maps
                         </a>
                     </div>

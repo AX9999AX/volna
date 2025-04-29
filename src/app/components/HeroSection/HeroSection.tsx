@@ -37,6 +37,14 @@ const HeroSection = () => {
                     <h1 className='text-black md:text-white font-primary font-medium text-[32px] text-center md:text-left md:text-[48px] lg:text-[60px] xl:text-[80px] leading-[128%]'>
                         Сучасний простір <br /> для комфортного життя
                     </h1>
+                    <Image
+                        src={'/bg/bg-hero-mobile.jpg'}
+                        alt='ЖК Волна'
+                        width={600}
+                        height={600}
+                        className='block my-4 md:hidden rounded-2xl'
+                        priority
+                    />
                     <div className='flex justify-center md:hidden my-4 flex-wrap'>
                         <div
                             className={`flex justify-center items-center font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl mr-3 mb-3`}>
@@ -84,14 +92,7 @@ const HeroSection = () => {
                         </button>
                     </div>
                 </div>
-                <Image
-                    src={'/bg/bg-hero-mobile.jpg'}
-                    alt='ЖК Волна'
-                    width={600}
-                    height={600}
-                    className='block my-4 md:hidden rounded-2xl'
-                    priority
-                />
+
                 <div className='bg-[#F2F4F7] md:bg-white rounded-3xl p-5 mt-5'>
                     <h2 className='text-black text-center md:text-left font-primary font-medium text-[16px] md:text-[32px] leading-[128%] mb-5'>
                         Чому краще жити саме в нас:

@@ -9,9 +9,9 @@ const Header = () => {
     const scrollToSection = (id: string) => {
         const section = document.getElementById(id)
         if (section) {
-            window.scrollTo({
-                top: section.offsetTop,
+            section.scrollIntoView({
                 behavior: 'smooth',
+                block: 'start',
             })
         }
     }

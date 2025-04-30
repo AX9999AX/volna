@@ -106,12 +106,12 @@ const Interior = (props: IMegaGallery) => {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className='order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
                     onClick={() => {
-                        setCurrentImage('/mega-gallery/interior-6.jpg')
+                        setCurrentImage('/mega-gallery/interior-7.jpg')
                         setIsModalOpen(true)
                     }}>
                     <Image
                         fill
-                        src={'/mega-gallery/interior-6.jpg'}
+                        src={'/mega-gallery/interior-7.jpg'}
                         alt='Gallery 1'
                         className='object-cover'
                         sizes='50vw'
@@ -119,23 +119,6 @@ const Interior = (props: IMegaGallery) => {
                 </motion.div>
                 {isViewMore && (
                     <>
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                            transition={{ duration: 0.6, delay: 0.3 }}
-                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
-                            onClick={() => {
-                                setCurrentImage('/mega-gallery/interior-7.jpg')
-                                setIsModalOpen(true)
-                            }}>
-                            <Image
-                                fill
-                                src={'/mega-gallery/interior-7.jpg'}
-                                alt='Gallery 1'
-                                className='object-cover'
-                                sizes='50vw'
-                            />
-                        </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -165,23 +148,6 @@ const Interior = (props: IMegaGallery) => {
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-9.jpg'}
-                                alt='Gallery 1'
-                                className='object-cover'
-                                sizes='50vw'
-                            />
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                            transition={{ duration: 0.6, delay: 0.3 }}
-                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
-                            onClick={() => {
-                                setCurrentImage('/mega-gallery/interior-10.jpg')
-                                setIsModalOpen(true)
-                            }}>
-                            <Image
-                                fill
-                                src={'/mega-gallery/interior-10.jpg'}
                                 alt='Gallery 1'
                                 className='object-cover'
                                 sizes='50vw'
@@ -403,23 +369,6 @@ const Interior = (props: IMegaGallery) => {
                             <Image
                                 fill
                                 src={'/mega-gallery/interior-23.jpg'}
-                                alt='Gallery 1'
-                                className='object-cover'
-                                sizes='50vw'
-                            />
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                            transition={{ duration: 0.6, delay: 0.3 }}
-                            className='cursor-pointer order-2 md:order-0 relative overflow-hidden min-h-[300px] rounded-[20px]'
-                            onClick={() => {
-                                setCurrentImage('/mega-gallery/interior-24.jpg')
-                                setIsModalOpen(true)
-                            }}>
-                            <Image
-                                fill
-                                src={'/mega-gallery/interior-24.jpg'}
                                 alt='Gallery 1'
                                 className='object-cover'
                                 sizes='50vw'

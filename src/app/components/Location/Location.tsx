@@ -40,7 +40,7 @@ const Location = () => {
                                     До метро:
                                 </div>
                                 <div className='w-full md:w-auto flex justify-center items-center mt-4 md:mt-0'>
-                                    <div className='font-secondary text-[15px] leading-[150%] p-3 bg-white rounded-2xl ml-5 mr-3'>
+                                    <div className='font-secondary text-[15px] leading-[150%] p-3 bg-white rounded-2xl ml-0 md:ml-5 mr-3'>
                                         Автобус 74
                                     </div>
                                     <div className='font-secondary text-[15px] leading-[150%] p-3 bg-white rounded-2xl'>

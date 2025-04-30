@@ -38,12 +38,12 @@ const About = () => {
                         <strong>створений з думкою про комфорт та безпеку мешканців</strong>, розташований у тихому
                         затишному районі Києва, на Осокорках.
                     </p>
-                    <div className='grid grid-cols-2 gap-6'>
-                        <div className='col-span-2 md:col-span-1 h-[410px] bg-[#F8F8F8] rounded-[29px]'>
-                            <h3 className='text-center my-4 font-primary font-medium text-[26px] leading-[128%] text-[#1D1D1F]'>
+                    <div className='hidden md:grid grid-cols-2 gap-6'>
+                        <div className='col-span-2 md:col-span-1 h-[350px] md:h-[410px] bg-[#F8F8F8] rounded-[29px]'>
+                            <h3 className='hidden md:block text-center my-4 font-primary font-medium text-[26px] leading-[128%] text-[#1D1D1F]'>
                                 Комфорт та безпека мешканців
                             </h3>
-                            <div className='flex justify-center mb-4'>
+                            <div className='mt-4 md:mt-0 flex justify-center mb-4'>
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     transition={{ type: 'spring', stiffness: 300 }}
@@ -62,7 +62,7 @@ const About = () => {
                                 />
                             </div>
                         </div>
-                        <div className='col-span-2 md:col-span-1 h-[410px] bg-[#F8F8F8] rounded-[29px]'>
+                        <div className='hidden md:block col-span-2 md:col-span-1 h-[410px] bg-[#F8F8F8] rounded-[29px]'>
                             <div className='relative h-[240px] m-2'>
                                 <Image
                                     fill
@@ -109,6 +109,31 @@ const About = () => {
                     Комплекс має закриту територію з охороною 24/7 , власну автостоянку, автономну інженерну
                     інфраструктуру, включно з власною артезіанською свердловиною для водопостачання
                 </p>
+            </div>
+            <div className='grid md:hidden grid-cols-2 gap-6 my-6'>
+                <div className='col-span-2 md:col-span-1 h-[350px] md:h-[410px] bg-[#F8F8F8] rounded-[29px]'>
+                    <h3 className='hidden md:block text-center my-4 font-primary font-medium text-[26px] leading-[128%] text-[#1D1D1F]'>
+                        Комфорт та безпека мешканців
+                    </h3>
+                    <div className='mt-4 md:mt-0 flex justify-center mb-4'>
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
+                            onClick={() => scrollToSection('advantages')}
+                            className='font-secondary text-[15px] cursor-pointer border-2 border-[#E5E5E5] bg-white rounded-[24px] w-[200px] h-[48px]'>
+                            Переваги Проживання
+                        </motion.button>
+                    </div>
+                    <div className='relative min-h-[240px] m-2'>
+                        <Image
+                            fill
+                            src={'/about/security-house.avif'}
+                            alt={'Alt'}
+                            className='object-cover rounded-[25px]'
+                            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                        />
+                    </div>
+                </div>
             </div>
         </section>
     )

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
+import { Menu } from 'lucide-react'
 
 const MobileNav = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -38,12 +39,9 @@ const MobileNav = () => {
             <button
                 className='block xl:hidden'
                 onClick={handleOpen}>
-                <Image
+                <Menu
                     width={32}
                     height={32}
-                    src={'/icon/menu-mobile.svg'}
-                    alt={'Меню'}
-                    className='h-[32px] w-[32px]'
                 />
             </button>
             <AnimatePresence>

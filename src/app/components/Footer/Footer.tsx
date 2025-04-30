@@ -23,6 +23,7 @@ const Footer = () => {
                         alt='Лого'
                         width={288}
                         height={78}
+                        className='w-[135px] h-[35px] md:w-[288px] md:h-[78px]'
                     />
                 </div>
                 <div className='order-last md:order-none flex flex-wrap justify-center items-center'>

@@ -10,7 +10,7 @@ const Location = () => {
     return (
         <section className='bg-[#F8F8F8]'>
             <div className='container mx-auto px-8'>
-                <div className='flex xl:hidden justify-between items-center flex-wrap pt-12'>
+                <div className='flex xl:hidden justify-between items-center flex-wrap pt-4 md:pt-12'>
                     <h2 className='w-full xl:w-auto text-center xl:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
                         Локація та інфраструктура
                     </h2>
@@ -23,7 +23,7 @@ const Location = () => {
                         <DynamicMap />
                     </div>
                     <div className='col-span-2 xl:col-span-1'>
-                        <h2 className='hidden xl:block text-center xl:text-left font-primary font-medium text-[24px] md:text-[40px] xl:text-[42px] my-6'>
+                        <h2 className='hidden xl:block text-center xl:text-left font-primary font-medium text-[24px] md:text-[40px] xl:text-[42px] md:my-6'>
                             Локація та інфраструктура
                         </h2>
                         <p className='hidden md:block text-center xl:text-left font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>

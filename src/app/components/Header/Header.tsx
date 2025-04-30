@@ -25,6 +25,7 @@ const Header = () => {
                         alt='Лого'
                         width={121}
                         height={33}
+                        className='w-[135px] h-[35px] md:w-[135px] md:h-[35px]'
                     />
                 </Link>
                 <nav className='hidden xl:block'>

@@ -5,7 +5,7 @@ const Advantages = () => {
     return (
         <section
             id='advantages'
-            className='container mx-auto px-8 mt-20 mb-20'>
+            className='container mx-auto px-8 mt-20 mb-12 md:mb-20'>
             <div className='flex justify-between items-center flex-wrap mt-8 md:mt-20 mb-4 md:mb-10'>
                 <h2 className='w-full md:w-auto text-center md:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
                     Переваги проживання
@@ -52,7 +52,7 @@ const Advantages = () => {
                     />
                 </div>
                 <div className='col-span-2 md:col-span-1'>
-                    <div className='bg-[#F8F8F8] p-6 mb-5 rounded-[33px]'>
+                    <div className='bg-[#E5E5E5] md:bg-[#F8F8F8] p-6 mb-5 rounded-[33px]'>
                         <h3 className='mb-6 text-center md:text-left font-primary font-medium text-[20px] md:text-[26px] leading-[128%]'>
                             Автономність та екологічність
                         </h3>
@@ -73,7 +73,7 @@ const Advantages = () => {
                             ]}
                         />
                     </div>
-                    <div className='bg-[#F8F8F8] p-6 rounded-[33px]'>
+                    <div className='bg-[#E5E5E5] md:bg-[#F8F8F8] p-6 rounded-[33px]'>
                         <h3 className='mb-6 text-center md:text-left font-primary font-medium text-[20px] md:text-[26px] leading-[128%]'>
                             Безпека Житлового Комплексу
                         </h3>

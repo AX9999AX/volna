@@ -45,11 +45,11 @@ const HeroSection = () => {
                         className='block my-4 md:hidden rounded-2xl'
                         priority
                     />
+                    <p className='hidden 2xl:block absolute right-[40px] top-[20px] font-secondary text-[18px] text-white leading-[150%] w-[560px]'>
+                        Житловий комплекс «Volna» - сучасний комплекс для комфортного проживання в Києві, на закритій
+                        території з охороною, на березі Дніпра.
+                    </p>
                     <div className='flex gap-3 justify-center md:hidden my-4 flex-wrap'>
-                        <div
-                            className={`flex justify-center items-center font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl `}>
-                            Київ, Оскороки
-                        </div>
                         <a
                             href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6'
                             target='_blank'
@@ -57,10 +57,6 @@ const HeroSection = () => {
                             Переглянути в Google Maps
                         </a>
                     </div>
-                    <p className='hidden 2xl:block absolute right-[40px] top-[20px] font-secondary text-[18px] text-white leading-[150%] w-[560px]'>
-                        Житловий комплекс «Volna» - сучасний комплекс для комфортного проживання в Києві, на закритій
-                        території з охороною, на березі Дніпра.
-                    </p>
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
@@ -94,7 +90,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className='bg-[#F2F4F7] md:bg-white rounded-3xl p-5 mt-5'>
-                    <h2 className='text-black text-center md:text-left font-primary font-medium text-[16px] md:text-[32px] leading-[128%] mb-5'>
+                    <h2 className='text-black text-center md:text-left font-primary font-semibold md:font-medium text-[16px] md:text-[32px] leading-[128%] mb-5'>
                         Чому краще жити саме в нас:
                     </h2>
                     <div className='flex justify-center md:justify-start 2xl:justify-between items-center flex-wrap'>
@@ -109,6 +105,9 @@ const HeroSection = () => {
                         </div>
                         <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
                             Цілодобова охорона
+                        </div>
+                        <div className='block md:hidden font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                            Ціна оренди від ₴4.000
                         </div>
                     </div>
                     <div className='hidden md:flex justify-between items-center my-6 flex-wrap'>

@@ -49,14 +49,7 @@ const HeroSection = () => {
                         Житловий комплекс «Volna» - сучасний комплекс для комфортного проживання в Києві, на закритій
                         території з охороною, на березі Дніпра.
                     </p>
-                    <div className='flex gap-3 justify-center md:hidden my-4 flex-wrap'>
-                        <a
-                            href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6'
-                            target='_blank'
-                            className={`text-center flex justify-center items-center cursor-pointer font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl `}>
-                            Переглянути в Google Maps
-                        </a>
-                    </div>
+
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
@@ -76,6 +69,7 @@ const HeroSection = () => {
                             Житловий комплекс «Volna» - сучасний комплекс для комфортного проживання в Києві, на
                             закритій території з охороною, на березі Дніпра.
                         </p>
+
                         <button className='hidden md:flex 2xl:hidden cursor-pointer bg-[#F2F2F2] p-4 rounded-2xl font-secondary text-[15px] text-black'>
                             Про Житловий Комплекс
                             <Image
@@ -87,6 +81,15 @@ const HeroSection = () => {
                             />
                         </button>
                     </div>
+                </div>
+
+                <div className='flex gap-3 justify-center md:hidden my-4 flex-wrap'>
+                    <a
+                        href='https://maps.app.goo.gl/z8JHz6j7TTC9RUxt6'
+                        target='_blank'
+                        className={`text-center flex justify-center items-center cursor-pointer font-secondary text-[14px] text-black px-4 py-3 bg-btn-active rounded-4xl `}>
+                        Переглянути в Google Maps
+                    </a>
                 </div>
 
                 <div className='bg-[#F2F4F7] md:bg-white rounded-3xl p-5 mt-5'>

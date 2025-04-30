@@ -111,7 +111,7 @@ const About = () => {
                 </p>
             </div>
             <div className='grid md:hidden grid-cols-2 gap-6 my-6'>
-                <div className='col-span-2 md:col-span-1 h-[350px] md:h-[410px] bg-[#F8F8F8] rounded-[29px]'>
+                <div className='col-span-2 md:col-span-1 h-[335px] md:h-[410px] bg-[#F8F8F8] rounded-[29px]'>
                     <h3 className='hidden md:block text-center my-4 font-primary font-medium text-[26px] leading-[128%] text-[#1D1D1F]'>
                         Комфорт та безпека мешканців
                     </h3>

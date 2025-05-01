@@ -92,8 +92,8 @@ const HeroSection = () => {
                     </a>
                 </div>
 
-                <div className='bg-[#F2F4F7] md:bg-white rounded-3xl p-5 mt-5'>
-                    <h2 className='text-black text-center md:text-left font-primary font-semibold md:font-medium text-[16px] md:text-[32px] leading-[128%] mb-5'>
+                <div className='bg-[#E5E5E5] md:bg-white rounded-3xl p-5 mt-5'>
+                    <h2 className='text-black text-center md:text-left font-primary font-semibold md:font-medium text-[18px] md:text-[32px] leading-[128%] mb-5'>
                         Чому краще жити саме в нас:
                     </h2>
                     <div className='flex justify-center md:justify-start 2xl:justify-between items-center flex-wrap'>

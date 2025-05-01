@@ -21,7 +21,7 @@ const About = () => {
             id='about'
             className='container mx-auto px-8'>
             <div className='flex justify-between items-center flex-wrap mt-8 md:mt-20 mb-4 md:mb-10'>
-                <h2 className='w-full md:w-auto text-center md:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
+                <h2 className='w-full md:w-auto text-center md:text-left font-primary font-bold text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
                     Про Житловий Комплекс
                 </h2>
                 <p className='w-full md:w-auto text-center md:text-left font-secondary font-normal text-[13px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
@@ -48,7 +48,7 @@ const About = () => {
                                     whileHover={{ scale: 1.05 }}
                                     transition={{ type: 'spring', stiffness: 300 }}
                                     onClick={() => scrollToSection('advantages')}
-                                    className='font-secondary text-[15px] cursor-pointer border-2 border-[#E5E5E5] bg-white rounded-[24px] w-[200px] h-[48px]'>
+                                    className='flex justify-center items-center font-secondary text-[15px] cursor-pointer bg-[#B4EF7B] rounded-[24px] px-4 h-[48px]'>
                                     Переваги Проживання
                                 </motion.button>
                             </div>
@@ -120,7 +120,7 @@ const About = () => {
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: 'spring', stiffness: 300 }}
                             onClick={() => scrollToSection('advantages')}
-                            className='font-secondary text-[15px] cursor-pointer border-2 border-[#E5E5E5] bg-white rounded-[24px] w-[200px] h-[48px]'>
+                            className='font-secondary text-[15px] cursor-pointer border-2 border-[#E5E5E5] bg-[#B4EF7B] rounded-[24px] w-[200px] h-[48px]'>
                             Переваги Проживання
                         </motion.button>
                     </div>

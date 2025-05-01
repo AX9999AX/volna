@@ -8,7 +8,7 @@ const Contacts = () => {
             id='contacts'
             className='container mx-auto px-8 mt-20 mb-20'>
             <div className='flex justify-between items-center flex-wrap mt-8 md:mt-20 mb-4 md:mb-10'>
-                <h2 className='w-full md:w-auto text-center md:text-left font-primary font-medium text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
+                <h2 className='w-full md:w-auto text-center md:text-left font-primary font-bold text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>
                     Контактна інформація
                 </h2>
                 <p className='w-full md:w-auto text-center md:text-left font-secondary font-normal text-[13px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
@@ -37,7 +37,7 @@ const Contacts = () => {
                                 transition={{ type: 'spring', stiffness: 300 }}
                                 href='viber://chat?number=%2B380674271737'
                                 target='_blank'
-                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4'>
+                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4 bg-[#f2f2f2]'>
                                 Viber
                             </motion.a>
                             <motion.a
@@ -45,7 +45,7 @@ const Contacts = () => {
                                 transition={{ type: 'spring', stiffness: 300 }}
                                 href='http://t.me/Volna_Kyiv_Residence'
                                 target='_blank'
-                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2'>
+                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 bg-[#f2f2f2]'>
                                 Telegram
                             </motion.a>
                         </div>
@@ -60,7 +60,7 @@ const Contacts = () => {
                                 transition={{ type: 'spring', stiffness: 300 }}
                                 href='https://www.tiktok.com/@gk_volna'
                                 target='_blank'
-                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4'>
+                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4 bg-[#f2f2f2]'>
                                 TikTok
                             </motion.a>
                             <motion.a
@@ -68,7 +68,7 @@ const Contacts = () => {
                                 transition={{ type: 'spring', stiffness: 300 }}
                                 href='https://www.instagram.com/volna_kyiv'
                                 target='_blank'
-                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4'>
+                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 mr-4 bg-[#f2f2f2]'>
                                 Instagram
                             </motion.a>
                             <motion.a
@@ -76,7 +76,7 @@ const Contacts = () => {
                                 transition={{ type: 'spring', stiffness: 300 }}
                                 href='https://www.facebook.com/volna.kyiv/'
                                 target='_blank'
-                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2'>
+                                className='flex justify-center items-center cursor-pointer border-2 text-[14px] md:text-[15px] rounded-[24px] border-[#E5E5E5] p-2 bg-[#f2f2f2]'>
                                 Facebook
                             </motion.a>
                         </div>

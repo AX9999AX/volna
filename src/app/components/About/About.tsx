@@ -39,7 +39,7 @@ const About = () => {
                         затишному районі Києва, на Осокорках.
                     </p>
                     <div className='hidden md:grid grid-cols-2 gap-6'>
-                        <div className='col-span-2 md:col-span-1 h-[350px] md:h-[410px] bg-[#F8F8F8] rounded-[29px]'>
+                        <div className='col-span-2 md:col-span-1 h-[350px] md:h-[410px] bg-[#E5E5E5] rounded-[29px]'>
                             <h3 className='hidden md:block text-center my-4 font-primary font-medium text-[26px] leading-[128%] text-[#1D1D1F]'>
                                 Комфорт та безпека мешканців
                             </h3>
@@ -62,7 +62,7 @@ const About = () => {
                                 />
                             </div>
                         </div>
-                        <div className='hidden md:block col-span-2 md:col-span-1 h-[410px] bg-[#F8F8F8] rounded-[29px]'>
+                        <div className='hidden md:block col-span-2 md:col-span-1 h-[410px] bg-[#E5E5E5] rounded-[29px]'>
                             <div className='relative h-[240px] m-2'>
                                 <Image
                                     fill

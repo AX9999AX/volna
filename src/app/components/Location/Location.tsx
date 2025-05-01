@@ -8,7 +8,7 @@ const DynamicMap = dynamic(() => import('./LocationMap'), {
 
 const Location = () => {
     return (
-        <section className='bg-[#E5E5E5] md:bg-[#F8F8F8]'>
+        <section className='bg-[#E5E5E5]'>
             <div className='container mx-auto px-8'>
                 <div className='flex xl:hidden justify-between items-center flex-wrap pt-4 md:pt-12'>
                     <h2 className='w-full xl:w-auto text-center xl:text-left font-primary font-bold text-[24px] md:text-[48px] 2xl:text-[64px] leading-[128%]'>

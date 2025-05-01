@@ -18,14 +18,14 @@ const Header = () => {
 
     return (
         <header className='container mx-auto'>
-            <div className='flex justify-between items-center h-[63px] mx-0 md:mx-8 px-8 rounded-b-[29px] bg-[#F8F8F8]'>
+            <div className='flex justify-between items-center h-[63px] mx-0 md:mx-8 px-8 rounded-b-[29px] bg-[#E5E5E5]'>
                 <Link href={'/'}>
                     <Image
                         src='/icon/logo.svg'
                         alt='Лого'
-                        width={121}
-                        height={33}
-                        className='w-[135px] h-[35px] md:w-[135px] md:h-[35px]'
+                        width={170}
+                        height={50}
+                        className='w-[170px] h-[50px] md:w-[170px] md:h-[50px]'
                     />
                 </Link>
                 <nav className='hidden xl:block'>

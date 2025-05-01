@@ -16,7 +16,7 @@ const Advantages = () => {
             </div>
             <div className='grid grid-cols-2 gap-6'>
                 <div className='col-span-2 md:col-span-1 relative grid grid-cols-2 gap-6'>
-                    <div className='col-span-2 2xl:col-span-1 bg-[#E5E5E5] md:bg-[#F8F8F8] rounded-[29px] h-auto 2xl:h-[240px] p-6'>
+                    <div className='col-span-2 2xl:col-span-1 bg-[#E5E5E5] rounded-[29px] h-auto 2xl:h-[240px] p-6'>
                         <h3 className='font-primary font-medium text-[20px] md:text-[26px] leading-[128%] text-center mb-3'>
                             Сервісна служба
                         </h3>
@@ -52,7 +52,7 @@ const Advantages = () => {
                     />
                 </div>
                 <div className='col-span-2 md:col-span-1'>
-                    <div className='bg-[#E5E5E5] md:bg-[#F8F8F8] p-6 mb-5 rounded-[33px]'>
+                    <div className='bg-[#E5E5E5] p-6 mb-5 rounded-[33px]'>
                         <h3 className='mb-6 text-center md:text-left font-primary font-medium text-[20px] md:text-[26px] leading-[128%]'>
                             Автономність та екологічність
                         </h3>
@@ -73,7 +73,7 @@ const Advantages = () => {
                             ]}
                         />
                     </div>
-                    <div className='bg-[#E5E5E5] md:bg-[#F8F8F8] p-6 rounded-[33px]'>
+                    <div className='bg-[#E5E5E5] p-6 rounded-[33px]'>
                         <h3 className='mb-6 text-center md:text-left font-primary font-medium text-[20px] md:text-[26px] leading-[128%]'>
                             Безпека Житлового Комплексу
                         </h3>

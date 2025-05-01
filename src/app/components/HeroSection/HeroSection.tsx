@@ -92,37 +92,37 @@ const HeroSection = () => {
                     </a>
                 </div>
 
-                <div className='bg-[#E5E5E5] md:bg-white rounded-3xl p-5 mt-5'>
+                <div className='bg-[#E5E5E5] rounded-3xl p-5 mt-5'>
                     <h2 className='text-black text-center md:text-left font-primary font-semibold md:font-medium text-[18px] md:text-[32px] leading-[128%] mb-5'>
                         Чому краще жити саме в нас:
                     </h2>
                     <div className='flex justify-center md:justify-start 2xl:justify-between items-center flex-wrap'>
-                        <div className='text-center font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                        <div className='text-center font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
                             Варіанти проживання на різний «гаманець»
                         </div>
-                        <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                        <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white  rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
                             Власна автостоянка на 40 авто
                         </div>
-                        <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                        <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white  rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
                             Закрита затишна територія
                         </div>
-                        <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                        <div className='font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
                             Цілодобова охорона
                         </div>
-                        <div className='block md:hidden font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white md:bg-[#F2F2F2] rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
+                        <div className='block md:hidden font-secondary text-[14px] md:text-[15px] leading-[150%] p-2 md:p-5 text-black bg-white rounded-2xl my-1 md:my-3 mr-1 md:mr-3'>
                             Ціна оренди від ₴4.000
                         </div>
                     </div>
                     <div className='hidden md:flex justify-between items-center my-6 flex-wrap'>
                         <div className='flex items-center'>
                             <div className='font-secondary text-[18px] leading-[150%]'>Підходить:</div>
-                            <div className='font-secondary text-[15px] leading-[150%] p-3 border-2 rounded-4xl ml-4 mr-3 border-[#F2F2F2]'>
+                            <div className='bg-white font-secondary text-[15px] leading-[150%] p-3 border-2 rounded-4xl ml-4 mr-3 border-[#F2F2F2]'>
                                 Студентам
                             </div>
-                            <div className='font-secondary text-[15px] leading-[150%] p-3 border-2 rounded-4xl mr-3 border-[#F2F2F2]'>
+                            <div className='bg-white font-secondary text-[15px] leading-[150%] p-3 border-2 rounded-4xl mr-3 border-[#F2F2F2]'>
                                 Сімейним парам
                             </div>
-                            <div className='font-secondary text-[15px] leading-[150%] p-3 border-2 rounded-4xl mr-3 border-[#F2F2F2]'>
+                            <div className='bg-white font-secondary text-[15px] leading-[150%] p-3 border-2 rounded-4xl mr-3 border-[#F2F2F2]'>
                                 Тим, хто у відрядженні
                             </div>
                         </div>

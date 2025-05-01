@@ -16,7 +16,7 @@ const Footer = () => {
 
     return (
         <footer className='container mt-20 mx-auto'>
-            <div className='flex flex-col py-5 xl:py-0 gap-4 lg:flex-row justify-between items-center min-h-[120px] mx-0 md:mx-8 px-8 rounded-t-[29px] bg-[#F8F8F8]'>
+            <div className='flex flex-col py-5 xl:py-0 gap-4 lg:flex-row justify-between items-center min-h-[120px] mx-0 md:mx-8 px-8 rounded-t-[29px] bg-[#E5E5E5]'>
                 <div>
                     <Image
                         src='/icon/logo.svg'

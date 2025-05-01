@@ -63,7 +63,7 @@ const AnimatedList: React.FC<IAnimatedList> = (props: IAnimatedList) => {
                         <div className='flex flex-col w-full'>
                             <p
                                 className={`w-full bg-white ${
-                                    bgColorMd ? bgColorMd : 'md:bg-[#f8f8f8]'
+                                    bgColorMd ? bgColorMd : 'md:bg-[#E5E5E5]'
                                 } ${allignClass} ${paddingClass} font-secondary font-normal text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E] rounded-[8px] md:rounded-[0px]`}>
                                 {item.text}
                             </p>

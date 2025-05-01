@@ -40,7 +40,7 @@ export const Stats: React.FC = () => {
     return (
         <motion.div
             ref={ref}
-            className='flex justify-between gap-6 mt-12 flex-wrap'
+            className='flex justify-between gap-6 mt-4 md:mt-12 flex-wrap border-2 md:border-0 border-[#B4EF7B] rounded-[33px] py-6'
             variants={containerVariants}
             initial='hidden'
             animate={controls}>

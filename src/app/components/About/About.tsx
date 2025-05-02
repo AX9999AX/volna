@@ -55,7 +55,7 @@ const About = () => {
                             <div className='relative min-h-[240px] m-2'>
                                 <Image
                                     fill
-                                    src={'/about/security-house.avif'}
+                                    src={'/mega-gallery/mega-gallery-territory-7.jpg'}
                                     alt={'Alt'}
                                     className='object-cover rounded-[25px]'
                                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
@@ -66,7 +66,7 @@ const About = () => {
                             <div className='relative h-[240px] m-2'>
                                 <Image
                                     fill
-                                    src={'/about/appartment-lux.avif'}
+                                    src={'/appartments/lux-5.jpg'}
                                     alt={'Alt'}
                                     className='object-cover rounded-[25px]'
                                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
@@ -127,7 +127,7 @@ const About = () => {
                     <div className='relative min-h-[240px] m-2'>
                         <Image
                             fill
-                            src={'/about/security-house.avif'}
+                            src={'/mega-gallery/mega-gallery-territory-7.jpg'}
                             alt={'Alt'}
                             className='object-cover rounded-[25px]'
                             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'

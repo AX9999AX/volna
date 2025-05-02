@@ -29,7 +29,7 @@ const Advantages = () => {
                         <div className='relative h-[200px] m-2 rounded-2xl'>
                             <Image
                                 fill
-                                src={'/advantages/parking.avif'}
+                                src={'/advantages/parking-new.jpg'}
                                 alt='Parking'
                                 className='object-cover rounded-2xl'
                                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'

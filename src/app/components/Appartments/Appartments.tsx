@@ -1,5 +1,6 @@
 import AppartmentHalfLux from '../Appartment/AppartmentHalfLux'
 import AppartmentLux from '../Appartment/AppartmentLux'
+import AppartmentStandart from '../Appartment/AppartmentStandart'
 
 const Appartments = () => {
     return (
@@ -16,6 +17,7 @@ const Appartments = () => {
             </div>
             <AppartmentLux />
             <AppartmentHalfLux />
+            <AppartmentStandart />
         </section>
     )
 }

@@ -6,7 +6,7 @@ import { useRef, useState } from 'react'
 import AnimatedList from '../AnimatedList/AnimatedList'
 import ImageModal from '../ImageModal/ImageModal'
 
-const AppartmentHalfLux = () => {
+const AppartmentStandart = () => {
     const ref = useRef(null)
     const [isViewMore, setIsViewMore] = useState<boolean>(false)
     const isInView = useInView(ref, { once: true })
@@ -25,7 +25,7 @@ const AppartmentHalfLux = () => {
                 <h3
                     className={`mb-3 xl:mb-0 w-full md:w-auto text-center md:text-left font-secondary font-normal md:font-bold text-[20px] ${!isOpen ? 'xl:tex-[28px] 2xl:text-[32px]' : 'lg:text-[32px]'
                         } leading-[115%]`}>
-                    Апартаменти категорії «Напівлюкс»
+                    Апартаменти категорії «Cтандарт»
                 </h3>
                 {!isOpen && (
                     <div className='text-center md:text-left mb-3 xl:mb-0 font-secondary text-[14px] md:text-[18px] leading-[150%] text-[#4E4E4E]'>
@@ -33,7 +33,7 @@ const AppartmentHalfLux = () => {
                     </div>
                 )}
                 <div className={`${isOpen ? 'hidden md:block' : 'block md:block'} bg-[#B4EF7B] px-6 py-2 rounded-2xl`}>
-                    <span className='font-secondary font-bold text-[20px] lg:text-[32px]'>Від ₴12.000</span>
+                    <span className='font-secondary font-bold text-[20px] lg:text-[32px]'>Від ₴10.000</span>
                     <span className='font-secondary text-[12px] text-[#18181B]'>/місяць</span>
                 </div>
             </div>
@@ -47,12 +47,12 @@ const AppartmentHalfLux = () => {
                                 transition={{ duration: 0.6, delay: 0.3 }}
                                 className='cursor-pointer relative min-h-[250px] md:min-h-[500px] m-2'
                                 onClick={() => {
-                                    setCurrentImage('/appartments/half-lux-1.jpg')
+                                    setCurrentImage('/appartments/standart-1.jpg')
                                     setIsModalOpen(true)
                                 }}>
                                 <Image
                                     fill
-                                    src={'/appartments/half-lux-1.jpg'}
+                                    src={'/appartments/standart-1.jpg'}
                                     alt={'Alt'}
                                     className='object-cover rounded-[25px]'
                                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
@@ -65,12 +65,12 @@ const AppartmentHalfLux = () => {
                                     transition={{ duration: 0.6, delay: 0.3 }}
                                     className='cursor-pointer hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'
                                     onClick={() => {
-                                        setCurrentImage('/appartments/half-lux-2.jpg')
+                                        setCurrentImage('/appartments/standart-2.jpg')
                                         setIsModalOpen(true)
                                     }}>
                                     <Image
                                         fill
-                                        src={'/appartments/half-lux-2.jpg'}
+                                        src={'/appartments/standart-2.jpg'}
                                         alt={'Alt'}
                                         className='object-cover rounded-[25px]'
                                         sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
@@ -82,12 +82,12 @@ const AppartmentHalfLux = () => {
                                     transition={{ duration: 0.6, delay: 0.3 }}
                                     className='cursor-pointer hidden md:block relative min-h-[250px] md:min-h-[300px] m-2'
                                     onClick={() => {
-                                        setCurrentImage('/appartments/half-lux-3.jpg')
+                                        setCurrentImage('/appartments/standart-3.jpg')
                                         setIsModalOpen(true)
                                     }}>
                                     <Image
                                         fill
-                                        src={'/appartments/half-lux-3.jpg'}
+                                        src={'/appartments/standart-3.jpg'}
                                         alt={'Alt'}
                                         className='object-cover rounded-[25px]'
                                         sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
@@ -101,12 +101,12 @@ const AppartmentHalfLux = () => {
                                             transition={{ duration: 0.6, delay: 0.3 }}
                                             className='cursor-pointer block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'
                                             onClick={() => {
-                                                setCurrentImage('/appartments/half-lux-2.jpg')
+                                                setCurrentImage('/appartments/standart-2.jpg')
                                                 setIsModalOpen(true)
                                             }}>
                                             <Image
                                                 fill
-                                                src={'/appartments/half-lux-2.jpg'}
+                                                src={'/appartments/standart-2.jpg'}
                                                 alt={'Alt'}
                                                 className='object-cover rounded-[25px]'
                                                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
@@ -118,12 +118,12 @@ const AppartmentHalfLux = () => {
                                             transition={{ duration: 0.6, delay: 0.3 }}
                                             className='cursor-pointer block md:hidden relative min-h-[250px] md:min-h-[300px] m-2'
                                             onClick={() => {
-                                                setCurrentImage('/appartments/half-lux-3.jpg')
+                                                setCurrentImage('/appartments/standart-3.jpg')
                                                 setIsModalOpen(true)
                                             }}>
                                             <Image
                                                 fill
-                                                src={'/appartments/half-lux-3.jpg'}
+                                                src={'/appartments/standart-3.jpg'}
                                                 alt={'Alt'}
                                                 className='object-cover rounded-[25px]'
                                                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
@@ -135,12 +135,12 @@ const AppartmentHalfLux = () => {
                                             transition={{ duration: 0.6, delay: 0.3 }}
                                             className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
                                             onClick={() => {
-                                                setCurrentImage('/appartments/half-lux-5.jpg')
+                                                setCurrentImage('/appartments/standart-4.jpg')
                                                 setIsModalOpen(true)
                                             }}>
                                             <Image
                                                 fill
-                                                src={'/appartments/half-lux-5.jpg'}
+                                                src={'/appartments/standart-4.jpg'}
                                                 alt={'Alt'}
                                                 className='object-cover rounded-[25px]'
                                                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
@@ -152,12 +152,12 @@ const AppartmentHalfLux = () => {
                                             transition={{ duration: 0.6, delay: 0.3 }}
                                             className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
                                             onClick={() => {
-                                                setCurrentImage('/appartments/half-lux-6.jpg')
+                                                setCurrentImage('/appartments/standart-5.jpg')
                                                 setIsModalOpen(true)
                                             }}>
                                             <Image
                                                 fill
-                                                src={'/appartments/half-lux-6.jpg'}
+                                                src={'/appartments/standart-5.jpg'}
                                                 alt={'Alt'}
                                                 className='object-cover rounded-[25px]'
                                                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
@@ -169,29 +169,12 @@ const AppartmentHalfLux = () => {
                                             transition={{ duration: 0.6, delay: 0.3 }}
                                             className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
                                             onClick={() => {
-                                                setCurrentImage('/appartments/half-lux-7.jpg')
+                                                setCurrentImage('/appartments/standart-6.jpg')
                                                 setIsModalOpen(true)
                                             }}>
                                             <Image
                                                 fill
-                                                src={'/appartments/half-lux-7.jpg'}
-                                                alt={'Alt'}
-                                                className='object-cover rounded-[25px]'
-                                                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
-                                            />
-                                        </motion.div>
-                                        <motion.div
-                                            initial={{ opacity: 0, scale: 0.95 }}
-                                            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                                            transition={{ duration: 0.6, delay: 0.3 }}
-                                            className='cursor-pointer relative min-h-[250px] md:min-h-[300px] m-2'
-                                            onClick={() => {
-                                                setCurrentImage('/appartments/appartment-half-lux-9.jpg')
-                                                setIsModalOpen(true)
-                                            }}>
-                                            <Image
-                                                fill
-                                                src={'/appartments/appartment-half-lux-9.jpg'}
+                                                src={'/appartments/standart-6.jpg'}
                                                 alt={'Alt'}
                                                 className='object-cover rounded-[25px]'
                                                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw'
@@ -214,11 +197,7 @@ const AppartmentHalfLux = () => {
                         </div>
                         <div className='w-full xl:w-1/2'>
                             <p className='text-center xl:text-left font-secondary text-[15px] md:text-[18px] leading-[150%] text-[#4E4E4E] mb-5'>
-                                В «Комфортній» частини ЖК «VOLNA», зі своєю окремою рецепцією, розташовано 69 двомісних
-                                апартаментів категорії «люкс» та «напівлюкс»
-                            </p>
-                            <p className='text-center md:text-left font-secondary text-[16px] md:text-[20px] font-bold'>
-                                Облаштований:
+                                Апартаменти категорії «стандарт» обладнані:
                             </p>
                             <AnimatedList
                                 items={[
@@ -226,48 +205,47 @@ const AppartmentHalfLux = () => {
                                         text: '1 двомісним ліжком або 2 одномісними ліжками, з ортопедичними матрацами',
                                     },
                                     {
-                                        text: 'Шафа для одягу',
+                                        text: 'Одежною шафою',
                                     },
                                     {
-                                        text: 'Дзеркало з вішалкою для верхнього одягу',
+                                        text: 'Дзеркалом з вішалкою для верхнього одягу',
                                     },
                                     {
-                                        text: 'Меблевий стелаж',
+                                        text: 'Меблевим стелажем',
                                     },
                                     {
-                                        text: 'Стіл з 2 стільцями',
+                                        text: 'Столом з 2 стільцями',
                                     },
                                     {
-                                        text: 'Мінікухня з електроплитою',
+                                        text: 'Мікрохвильовою пічкою',
                                     },
                                     {
-                                        text: 'Холодильник',
+                                        text: 'Електрочайником',
                                     },
                                     {
-                                        text: 'Комплект посуду та столових приладів',
+                                        text: 'Комплектом посуду та столових приладів',
                                     },
                                     {
-                                        text: 'Кондиціонер',
+                                        text: 'Wi-Fi роутером',
                                     },
                                     {
                                         text: 'Wi-Fi роутер',
                                     },
                                     {
-                                        text: 'Електрорадіатор з індивідуальним керуванням',
+                                        text: 'Кондиціонером',
                                     },
                                     {
-                                        text: 'Рулонні штори на вікнах',
+                                        text: 'Електрорадіатором з індивідуальним керуванням',
                                     },
                                     {
-                                        text: 'Індивідуальний санвузл обладнаний:',
+                                        text: 'Рулонними шторами на вікнах.',
+                                    },
+                                    {
+                                        text: 'Для апартаментів категорії «стандарт», у зонах загального користування облаштовані:',
                                         sublist: [
-                                            'Душовою кабіною',
-                                            'Умивальником',
-                                            'Шафкою з дзеркалом',
-                                            'Унітазом',
-                                            'Сушкою для рушників',
-                                            'Бойлером',
-                                            'Вішалкою для одягу',
+                                            '2 кухні-їдальні, обладнані кухонними меблями та побутовою технікою',
+                                            '7 душових кабін',
+                                            '2 велики блоки санвузлів (чоловічий та жіночий)',
                                         ],
                                     },
                                 ]}
@@ -281,7 +259,7 @@ const AppartmentHalfLux = () => {
                     </div>
                     <div className='flex justify-center items-center my-4'>
                         <div className='block md:hidden bg-[#B4EF7B] px-6 py-2 rounded-2xl'>
-                            <span className='font-secondary font-bold text-[20px] lg:text-[32px]'>Від ₴12.000</span>
+                            <span className='font-secondary font-bold text-[20px] lg:text-[32px]'>Від ₴10.000</span>
                             <span className='font-secondary text-[12px] text-[#18181B]'>/місяць</span>
                         </div>
                     </div>
@@ -297,4 +275,4 @@ const AppartmentHalfLux = () => {
     )
 }
 
-export default AppartmentHalfLux
+export default AppartmentStandart

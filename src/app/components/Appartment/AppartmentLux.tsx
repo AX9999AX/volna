@@ -20,7 +20,7 @@ const AppartmentLux = () => {
                     Апартаменти категорії «Люкс»
                 </h3>
                 <div className='hidden md:block bg-[#B4EF7B] px-6 py-2 rounded-2xl'>
-                    <span className='font-secondary font-bold text-[20px] lg:text-[32px]'>₴11.000</span>
+                    <span className='font-secondary font-bold text-[20px] lg:text-[32px]'>Від ₴14.000</span>
                     <span className='font-secondary text-[12px] text-[#18181B]'>/місяць</span>
                 </div>
             </div>
@@ -251,7 +251,7 @@ const AppartmentLux = () => {
             </div>
             <div className='flex justify-center items-center my-4'>
                 <div className='block md:hidden bg-[#B4EF7B] px-6 py-2 rounded-2xl'>
-                    <span className='font-secondary font-bold text-[20px] lg:text-[32px]'>₴11.000</span>
+                    <span className='font-secondary font-bold text-[20px] lg:text-[32px]'>Від ₴14.000</span>
                     <span className='font-secondary text-[12px] text-[#18181B]'>/місяць</span>
                 </div>
             </div>

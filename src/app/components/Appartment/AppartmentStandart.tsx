@@ -229,9 +229,6 @@ const AppartmentStandart = () => {
                                         text: 'Wi-Fi роутером',
                                     },
                                     {
-                                        text: 'Wi-Fi роутер',
-                                    },
-                                    {
                                         text: 'Кондиціонером',
                                     },
                                     {
